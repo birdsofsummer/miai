@@ -1,0 +1,8 @@
+#rm abc && 
+#mkfifo abc
+a=$1
+[ !a ] &&  a="/data/txt/tangshi.txt"
+#[ !a ] &&  a="/root/birds.txt"
+awk -f speak3.awk $a
+speak2 < abc&
+#cat<abc&

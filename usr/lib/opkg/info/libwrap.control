@@ -1,0 +1,10 @@
+Package: libwrap
+Version: 7.6-1
+Depends: libc, librt, libpthread
+Source: feeds/packages/libs/tcp_wrappers
+License: BSD
+Section: libs
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: meson
+Installed-Size: 11082
+Description:  Security wrapper library for TCP services

@@ -1,0 +1,8 @@
+Package: libdirac
+Version: 2.4-0
+Depends: libc, librt, libpthread, libstdcpp
+Source: package/libs/libdirac
+Section: libs
+Architecture: meson
+Installed-Size: 1159902
+Description:  This package contains dirac audio process

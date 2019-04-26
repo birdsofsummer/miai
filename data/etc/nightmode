@@ -1,0 +1,8 @@
+
+config mode 'mode'
+	option total 'night'
+	option light 'night'
+	option volume 'night'
+	option start '23:00'
+	option stop '08:00'
+

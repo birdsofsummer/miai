@@ -1,0 +1,8 @@
+Package: dlna
+Version: 1
+Depends: libc, librt, libpthread, glib2, libpthread, libubox, libubus, libjson-c, libgssdp, libgupnp, libpolarssl, libintl-full
+Source: /home/jenkins/mico/mi/dlna
+Section: xiaomi
+Architecture: meson
+Installed-Size: 21395
+Description:  A UPnP server support play stream from QPlay.

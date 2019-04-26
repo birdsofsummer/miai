@@ -1,0 +1,12 @@
+Package: alsa-lib
+Version: 1.0.28-1
+Depends: libc, librt, libpthread, kmod-sound-core, libpthread, librt, libopus, libdirac, libflac, libprotobuf-c
+Source: package/libs/alsa-lib
+License: LGPLv2.1 GPLv2
+LicenseFiles: COPYING aserver/COPYING
+Section: libs
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: meson
+Installed-Size: 279244
+Description:  This is the library package for alsa, needed by some userspace programs.
+ You must have enabled the ALSA support in the kernel.

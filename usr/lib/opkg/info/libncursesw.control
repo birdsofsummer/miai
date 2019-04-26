@@ -1,0 +1,10 @@
+Package: libncursesw
+Version: 5.9-2
+Depends: libc, librt, libpthread
+Source: package/libs/ncurses
+License: MIT
+LicenseFiles: README
+Section: libs
+Architecture: arm64
+Installed-Size: 129844
+Description:  Terminal handling library (Unicode)

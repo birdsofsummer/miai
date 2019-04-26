@@ -1,0 +1,7 @@
+/etc/dnsmasq.conf
+/etc/dnsmasq.conf.ap
+/etc/hotplug.d/iface/25-dnsmasq
+/etc/config/dhcp
+/etc/init.d/dnsmasq
+/usr/sbin/dnsmasq
+/etc/dnsmasq.conf.sta

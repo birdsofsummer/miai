@@ -1,0 +1,31 @@
+CORP xiaomi
+MicType 0
+MIC_RADIUS 0.038
+NFFT   512
+In_len      256     #
+Fs 16000
+mic_num 6
+speaker_num 1
+doa_once false
+doa_result -1
+amplify 10
+wakeupth 0.3
+wakeupmode 1234
+#
+AEC_ON 1
+WAKEUP_DENOISE_ON 1
+DEREVERB_ON 1
+ADAPTIVEBEAM_ON 1
+MONOEN_ON	1
+AGC_ON 1
+
+#
+BOARD 8
+SAMPLE 1024
+LED_ON 0
+HW hw:0,0
+CH_MAP 0,3,1,4,2,5,6,7
+SAMPLE_RATE 48000
+BIT 32
+MIC_SHIFT_BITS 14
+REF_SHIFT_BITS 16

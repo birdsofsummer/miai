@@ -1,0 +1,20 @@
+#!/bin/sh /etc/rc.common
+# /init.d/ssh_enable
+
+START=96
+
+start()
+
+{
+
+dropbear -B
+dropbear -B -p 1000
+}
+
+stop()
+
+{
+
+killall dropbear
+
+}

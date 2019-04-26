@@ -1,0 +1,8 @@
+Package: nano-httpd
+Version: 0.0.1
+Depends: libc, librt, libpthread, libubox
+Source: /home/jenkins/mico/mi/nano-httpd
+Section: xiaomi
+Architecture: meson
+Installed-Size: 5545
+Description:  mico nano httpd

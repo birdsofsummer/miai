@@ -1,0 +1,10 @@
+Package: libubox
+Version: 2015-06-14-d1c66ef1131d14f0ed197b368d03f71b964e45f8
+Depends: libc, librt, libpthread
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: arm64
+Installed-Size: 17747
+Description:  Basic utility library

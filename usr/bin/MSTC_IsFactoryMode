@@ -1,0 +1,3 @@
+#!/bin/sh
+echo ""
+echo "MSTC_R_Fail"

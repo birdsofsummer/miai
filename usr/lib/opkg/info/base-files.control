@@ -1,0 +1,9 @@
+Package: base-files
+Version: 157.2-unknown
+Depends: libc, librt, libpthread, netifd, procd, jsonfilter, usign
+Source: package/base-files
+License: GPL-2.0
+Section: base
+Architecture: meson
+Installed-Size: 1141093
+Description:  This package contains a base filesystem and system scripts for OpenWrt.

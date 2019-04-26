@@ -1,0 +1,8 @@
+Package: mibrain-service
+Version: 0.0.1
+Depends: libc, librt, libpthread, mibrain-common-sdk, mico-vendor, libjson-c, libubus, libblobmsg-json, libubox
+Source: /home/jenkins/mico/mi/mibrain-service
+Section: xiaomi
+Architecture: meson
+Installed-Size: 7675
+Description:  xiaomi brain service

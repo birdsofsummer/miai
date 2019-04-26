@@ -1,0 +1,7 @@
+/usr/bin/alarmd
+/etc/workday/unnomal_workday.cfg
+/etc/workday/unnomal_holiday.cfg
+/etc/workday/unnomal_workday.cfg.TW
+/etc/workday/unnomal_holiday.cfg.TW
+/etc/init.d/alarm
+/usr/bin/alarm_translate.sh

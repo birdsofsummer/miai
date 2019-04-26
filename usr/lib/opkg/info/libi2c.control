@@ -1,0 +1,8 @@
+Package: libi2c
+Version: 2013-12-15-1
+Depends: libc, librt, libpthread
+Source: package/utils/i2c-tools
+Section: libs
+Architecture: meson
+Installed-Size: 2078
+Description:  I2C library

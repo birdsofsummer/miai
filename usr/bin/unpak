@@ -1,0 +1,5 @@
+for i in `ls *.ipk`
+do 
+  tar xvf $i
+  ls *.gz|xargs -Ixx  -n1 tar xvf xx -C / 
+done

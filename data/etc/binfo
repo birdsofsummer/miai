@@ -1,0 +1,9 @@
+
+config binfo 'binfo'
+	option sn '14891/980295402'
+	option mac_wifi '3C:BD:3E:63:AE:47'
+	option mac_bt '3C:BD:3E:5F:1A:67'
+	option miio_did '78066404'
+	option miio_key '4UWx54QovC3D5Yib'
+	option country 'CN'
+

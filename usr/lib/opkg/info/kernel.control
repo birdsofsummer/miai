@@ -1,0 +1,10 @@
+Package: kernel
+Version: 3.14.29-1-36560070b2f0ab52748c2eca5062600b
+Depends: libc, librt, libpthread
+Source: package/kernel/linux
+License: GPLv2
+Section: sys
+Status: unknown hold not-installed
+Architecture: meson
+Installed-Size: 103
+Description:  Virtual kernel package

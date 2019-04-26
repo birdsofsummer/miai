@@ -1,0 +1,10 @@
+Package: hostapd
+Version: 2017-08-24-3
+Depends: libc, librt, libpthread, libnl-tiny, hostapd-common, libubus, libiconv-full
+Conflicts: wpad, wpad-mini, wpad-mesh
+Source: /home/jenkins/mico/mi/hostapd
+Section: net
+Architecture: meson
+Installed-Size: 288492
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.

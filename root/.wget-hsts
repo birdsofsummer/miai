@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>[:<port>]	<incl. subdomains>	<created>	<max-age>
+archive.openwrt.org	0	0	1554875073	15768000
+busybox.net	0	0	1554525917	63072000
+github.com	0	1	1554863075	31536000

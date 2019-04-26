@@ -1,0 +1,13 @@
+Package: ruby-dbm
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, libdb47
+Source: /home/jow/relman-cc/.cache/feeds/packages/lang/ruby
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: lang
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm64
+Installed-Size: 7167
+Description:  The DBM class provides a wrapper to a Unix-style dbm or Database Manager library.
+ This package provides dbm.so file.
+ 

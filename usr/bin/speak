@@ -1,0 +1,3 @@
+tts=$*
+ubus -t 10000 call mibrain text_to_speech "{\"text\":\"$tts\",\"save\":0}"
+

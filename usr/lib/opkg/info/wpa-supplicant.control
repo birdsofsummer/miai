@@ -1,0 +1,9 @@
+Package: wpa-supplicant
+Version: 2017-08-24-3
+Depends: libc, librt, libpthread, libnl-tiny, libiconv-full
+Conflicts: wpad, wpad-mini, wpad-mesh
+Source: /home/jenkins/mico/mi/hostapd
+Section: net
+Architecture: meson
+Installed-Size: 304172
+Description:  WPA Supplicant

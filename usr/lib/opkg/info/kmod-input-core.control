@@ -1,0 +1,10 @@
+Package: kmod-input-core
+Version: 3.14.29-1
+Depends: kernel (=3.14.29-1-36560070b2f0ab52748c2eca5062600b)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: meson
+Installed-Size: 103
+Description:  Kernel modules for support of input device

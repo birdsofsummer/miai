@@ -1,0 +1,14 @@
+/usr/bin/ranlib
+/usr/bin/c++filt
+/usr/bin/ld
+/usr/bin/objcopy
+/usr/bin/nm
+/usr/bin/strip
+/bin/strings
+/usr/bin/readelf
+/usr/bin/size
+/usr/bin/gprof
+/usr/bin/addr2line
+/usr/bin/elfedit
+/usr/bin/ld.bfd
+/usr/bin/as

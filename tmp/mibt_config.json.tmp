@@ -1,0 +1,13 @@
+{
+    "device": {
+        "role": "sink",
+        "enable": "1",
+        "discoverable": "1",
+        "connectable": "1",
+        "bd_name": "小米AI音箱-5402",
+        "bd_addr": "3C:BD:3E:5F:1A:67",
+        "class_of_device": "04:04:28",
+	"countrycode": "0",
+	"misc": "0"
+    }
+}

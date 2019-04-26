@@ -1,0 +1,11 @@
+Package: git
+Version: 2.3.5-1
+Depends: libc, librt, libpthread, libopenssl, libpthread, librt
+Source: feeds/packages/net/git
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: arm64
+Installed-Size: 766290
+Description:  Git is a free & open source, distributed version control system
+ designed to handle everything from small to very large projects
+ with speed and efficiency.

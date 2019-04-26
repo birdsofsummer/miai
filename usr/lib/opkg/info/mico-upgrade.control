@@ -1,0 +1,8 @@
+Package: mico-upgrade
+Version: 1.0.0-1
+Depends: libc, librt, libpthread
+Source: /home/jenkins/mico/mi/mico-upgrade
+Section: xiaomi
+Architecture: meson
+Installed-Size: 2857
+Description:  Mico upgrade scripts

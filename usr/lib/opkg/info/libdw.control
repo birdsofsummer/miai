@@ -1,0 +1,11 @@
+Package: libdw
+Version: 0.161-1
+Depends: libc, librt, libpthread, libelf1, zlib, libbz2
+Source: package/libs/elfutils
+License: GPL-3.0+
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: meson
+Installed-Size: 90762
+Description:  ELF manipulation libraries (libdw)

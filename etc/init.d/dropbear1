@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+# /init.d/dropbear1
+START=97
+
+start()
+
+{
+dropbear -B -p 5000
+}
+
+stop()
+
+{
+
+killall dropbear
+
+}

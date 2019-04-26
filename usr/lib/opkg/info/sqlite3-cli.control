@@ -1,0 +1,14 @@
+Package: sqlite3-cli
+Version: 3081101-1
+Depends: libc, librt, libpthread, libsqlite3, libncurses, libreadline
+Source: feeds/packages/libs/sqlite3
+License: PUBLICDOMAIN
+Section: utils
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: meson
+Installed-Size: 335057
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains a terminal-based front-end to the SQLite (v3.x) library
+ that can evaluate queries interactively and display the results in multiple
+ formats.

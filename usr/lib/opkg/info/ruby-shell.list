@@ -1,0 +1,8 @@
+/usr/lib/ruby/2.2/shell/filter.rb
+/usr/lib/ruby/2.2/shell.rb
+/usr/lib/ruby/2.2/shell/builtin-command.rb
+/usr/lib/ruby/2.2/shell/version.rb
+/usr/lib/ruby/2.2/shell/command-processor.rb
+/usr/lib/ruby/2.2/shell/error.rb
+/usr/lib/ruby/2.2/shell/process-controller.rb
+/usr/lib/ruby/2.2/shell/system-command.rb

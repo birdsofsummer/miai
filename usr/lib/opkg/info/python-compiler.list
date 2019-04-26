@@ -1,0 +1,11 @@
+/usr/lib/python2.7/compiler/symbols.py
+/usr/lib/python2.7/compiler/transformer.py
+/usr/lib/python2.7/compiler/syntax.py
+/usr/lib/python2.7/compiler/visitor.py
+/usr/lib/python2.7/compiler/__init__.py
+/usr/lib/python2.7/compiler/future.py
+/usr/lib/python2.7/compiler/consts.py
+/usr/lib/python2.7/compiler/misc.py
+/usr/lib/python2.7/compiler/pycodegen.py
+/usr/lib/python2.7/compiler/pyassem.py
+/usr/lib/python2.7/compiler/ast.py

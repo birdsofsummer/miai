@@ -1,0 +1,14 @@
+Package: libldns
+Version: 1.6.17-2
+Depends: libc, librt, libpthread, libopenssl
+Source: /home/jenkins/mico/mi/ldns
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: opt
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Architecture: meson
+Installed-Size: 109920
+Description:  The goal of ldns is to simplify DNS programming, it supports recent RFCs like
+ the DNSSEC documents, and allows developers to easily create software
+ conforming to current RFCs, and experimental software for current Internet
+ Drafts.

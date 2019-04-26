@@ -1,0 +1,248 @@
+{
+  "session_id": "fae8e68be91345249cd421f4a5116d6e",
+  "request_id": "aa6842b4e2d66ff82fc3a6ff61f8e0a1",
+  "eid": "0:0:0:12:0:0:0:15:31:0:0:0:0:0:0",
+  "intention": "{ \"res_rank\": 0.835, \"help_info\": \"{\\\"has_ambiguous_slot\\\":false}\", \"offset\": 0, \"has_ambiguous_slot\": false, \"artist\": \"张靓颖\", \"query\": \"张靓颖\", \"module\": \"artist\", \"count\": 10, \"slot_ptn\": \"ARTIST\", \"is_hit_exp\": false, \"score\": 0.99, \"recommend_score\": 0, \"intent_score\": 0, \"func\": \"music_audio.music.artist.artist_search\", \"is_lyc_song_search\": false, \"origin_score\": 0.9997145345442492, \"domain\": \"music\", \"action\": \"query\", \"play_mode\": \"list_loop\", \"tokens\": \"<s> <any>\\/artist <\\/s>\", \"complete\": true, \"nonsense_score\": 0.00047134552733041346, \"domain_judge\": \"judge\", \"rewrite_infos\": { } }",
+  "domain": "music",
+  "open_mic": false,
+  "play_mode": "list_loop",
+  "userid": "35538078",
+  "authtoken": "o0alXEmUY1NXYSJqI8mzPy20kNKFaaDHNW8icmMIRs0Uh74t571aDOxJeZq4rSYQ",
+  "directive": [
+    {
+      "type": "media",
+      "items": [
+        {
+          "extend": {
+            "duration": 193,
+            "global_id": "6475001647773380330",
+            "scale": -1,
+            "tags": "女声;原唱;旅行;00年代;国语;精品池;表白;流行;甜美;清晨;温暖;爱情;情歌;华语;早晨场景",
+            "originSong": "我们在一起",
+            "album_id": "32503",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.6
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M000002StVxe22mRNX.jpg",
+          "id": "402501",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "Update",
+          "title": "我们在1起",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 214,
+            "global_id": "310552913527776316",
+            "scale": -1,
+            "tags": "10年代",
+            "originSong": "我是我的",
+            "album_id": "496284",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.54
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M000003BoDmC3jlPXT.jpg",
+          "id": "5186971",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "第七感",
+          "title": "我是我的",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 246,
+            "global_id": "7891957395710311200",
+            "scale": -1,
+            "tags": "00后;10年代;励志;励志+",
+            "originSong": "微笑以后",
+            "album_id": "496284",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.54
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M000003BoDmC3jlPXT.jpg",
+          "id": "5115385",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "第七感",
+          "title": "微笑以后",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 196,
+            "global_id": "5013730382325788631",
+            "scale": -1,
+            "tags": "原唱;90后;10年代",
+            "originSong": "办不到",
+            "album_id": "64986",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.54
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M00000458UNF0evQeN.jpg",
+          "id": "4844929",
+          "artist": "大嘴巴;张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "我相信",
+          "title": "办不到",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 225,
+            "global_id": "4455367817873812655",
+            "scale": -1,
+            "tags": "现场",
+            "originSong": "漫步人生路",
+            "album_id": "12964",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.54
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M0000037k4U43LRKno.jpg",
+          "id": "102808588",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "遗落人间的后冠：我们唱邓丽君",
+          "title": "漫步人生路",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 229,
+            "global_id": "2797895420707175346",
+            "scale": -1,
+            "tags": "10年代;现场;流行",
+            "originSong": "快乐颂",
+            "album_id": "5576187",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.54
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M0000006RpWI0A31hN.jpg",
+          "id": "225097901",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "梦想的声音第三季 第8期",
+          "title": "快乐颂",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 277,
+            "global_id": "2576763228423504491",
+            "scale": -1,
+            "tags": "原唱;00年代;华语",
+            "originSong": "保鲜期",
+            "album_id": "32503",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.54
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M000002StVxe22mRNX.jpg",
+          "id": "402494",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "Update",
+          "title": "保鲜期",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 313,
+            "global_id": "7717965448046205496",
+            "scale": -1,
+            "tags": "10年代;串烧",
+            "originSong": "青城山下白素贞 + 一千年以后",
+            "album_id": "3323041",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.53
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M000004KZdNo4UAEVX.jpg",
+          "id": "212044848",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "梦想的声音第二季 第5期",
+          "title": "青城山下白素贞 + 一千年以后",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 362,
+            "global_id": "4024377454906658476",
+            "scale": -1,
+            "tags": "10年代",
+            "originSong": "画心II",
+            "album_id": "120042",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.53
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M000001w4hjl117xB0.jpg",
+          "id": "7093934",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "画皮Ⅱ 电影原声带",
+          "title": "画心2",
+          "type": "resource",
+          "cp": "xiaowei"
+        },
+        {
+          "extend": {
+            "duration": 237,
+            "global_id": "6900788887163366350",
+            "scale": -1,
+            "tags": "10年代;分手",
+            "originSong": "就这样好了",
+            "album_id": "64986",
+            "cp_song_id": "0",
+            "exclusivity": "free",
+            "artist_id": "0",
+            "songRank": 0.53
+          },
+          "cover": "http://y.gtimg.cn/music/photo_new/T002R500x500M00000458UNF0evQeN.jpg",
+          "id": "4844927",
+          "artist": "张靓颖",
+          "refer": "search",
+          "isVisible": true,
+          "album": "我相信",
+          "title": "就这样好了",
+          "type": "resource",
+          "cp": "xiaowei"
+        }
+      ]
+    }
+  ]
+}

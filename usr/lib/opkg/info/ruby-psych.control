@@ -1,0 +1,12 @@
+Package: ruby-psych
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-bigdecimal, ruby-datetime, ruby-misc, ruby-enc, libyaml
+Source: /home/jow/relman-cc/.cache/feeds/packages/lang/ruby
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: lang
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm64
+Installed-Size: 31660
+Description:  Provides psych* files
+ 

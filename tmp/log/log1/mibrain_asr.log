@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "type": "RESULT_ASR_FINAL",
+    "request_id": "aa6842b4e2d66ff82fc3a6ff61f8e0a1",
+    "timestamp": 1554873823635
+  },
+  "response": {
+    "queries": [
+      {
+        "query": "张靓颖",
+        "confidence": 0.9991,
+        "is_final": false,
+        "query_vendor": 1015,
+        "query_debug": "{\"end_flag\":0,\"err_no\":0,\"idx\":47,\"result\":{\"nbest\":[\"张靓颖\"],\"uncertain\":[\"\"]},\"sid\":\"aa6842b4e2d66ff82fc3a6ff61f8e0a1\"}\n",
+        "locale": "zh-CN"
+      },
+      {
+        "query": "张靓颖",
+        "confidence": 0.9990997749999999,
+        "is_final": true,
+        "query_vendor": 1001,
+        "query_debug": "AsrResponse{text=[B@4b2bcc85, lastPacket=true, decodedText=张靓颖, error=null, gender=1, packetId=6, volume=0.0}",
+        "gender": 1,
+        "locale": "zh-CN"
+      }
+    ]
+  }
+}

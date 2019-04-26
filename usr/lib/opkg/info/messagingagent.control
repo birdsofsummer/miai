@@ -1,0 +1,8 @@
+Package: messagingagent
+Version: 1-1.1
+Depends: libc, librt, libpthread, libcurl, libstdcpp, libpthread, rapidjson, libubus, libubox, zlib, libblobmsg-json, libjson-c, libopenssl, libpolarssl, libuuid, libuci, librt, libthrift, glog, libevent2, libldns, libintl-full
+Source: /home/jenkins/mico/mi/messagingagent
+Section: opt
+Architecture: meson
+Installed-Size: 386296
+Description:  messagingagent

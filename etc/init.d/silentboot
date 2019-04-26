@@ -1,0 +1,36 @@
+#!/bin/sh /etc/rc.common
+
+START=99z
+
+# clear silent boot flag if set
+start() {
+	[ -x /bin/silentboot.sh ] || return 0
+
+	flag=`/bin/silentboot.sh get`
+	[ "$flag" = "0" ] && return 0
+
+	#close leds
+	ROM_TYPE=`uci -c /usr/share/mico get version.version.HARDWARE`
+	ROM_TYPE=`echo $ROM_TYPE|tr '[A-Z]' '[a-z]'`
+
+	case "$ROM_TYPE" in
+	lx01|lx05a)
+		echo 0 0 0 > /proc/ws2812/rgb0
+		;;
+	s12)
+		echo 0 0x0 > /sys/devices/i2c-3/3-003c/led_rgb
+		;;
+	s12a)
+		echo 0 0x0 > /sys/devices/i2c-1/1-003c/led_rgb
+		;;
+	*)
+		echo "[silentboot] no this platform $ROM_TYPE"
+		;;
+	esac
+	#end close leds
+
+	logger -s -p 3 -t "silentboot" "Booting in silent mode. clear flag now..."
+
+	/bin/silentboot.sh clear
+	return 0
+}

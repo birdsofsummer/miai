@@ -1,0 +1,8 @@
+Package: rapidjson
+Version: 1.1.0-1
+Depends: libc, librt, libpthread
+Source: /home/jenkins/mico/mi/rapidjson
+Section: opt
+Architecture: meson
+Installed-Size: 192
+Description:  rapidjson

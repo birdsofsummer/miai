@@ -1,0 +1,8 @@
+Package: mipns-general
+Version: 1
+Depends: libc, librt, libpthread, mico-vendor
+Source: /home/jenkins/mico/mi/pns-general
+Section: xiaomi
+Architecture: meson
+Installed-Size: 3808
+Description:  Like PNS(peripheral nervous system) on animal, mipns connect mibarin with its body (frondend SoundAI).

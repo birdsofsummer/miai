@@ -1,0 +1,785 @@
+Package: terminfo
+Version: 5.9-2
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968183
+Auto-Installed: yes
+
+Package: ruby-logger
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-multithread
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970937
+
+Package: ruby-zlib
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, zlib
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970933
+Auto-Installed: yes
+
+Package: ruby-nkf
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-enc
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970946
+
+Package: ruby-fiddle
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, libffi
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970896
+
+Package: libruby
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, libpthread, librt, libgmp
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970821
+Auto-Installed: yes
+
+Package: libpthread
+Version: 2.19-1
+Depends: libgcc
+Status: install hold installed
+Essential: yes
+Architecture: arm64
+Installed-Time: 1554968177
+Auto-Installed: yes
+
+Package: python-codecs
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042884
+Auto-Installed: yes
+
+Package: ruby-rbconfig
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970926
+Auto-Installed: yes
+
+Package: libubus-lua
+Version: 2015-05-25-f361bfa5fcb2daadf3b160583ce665024f8d108e
+Depends: libc, librt, libpthread, libubus, liblua
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554969963
+
+Package: ruby-shell
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-patterns
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970977
+
+Package: ruby-readline
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, libncurses, libreadline
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970964
+
+Package: ruby-datetime
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970842
+Auto-Installed: yes
+
+Package: ruby-minitest
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-gems
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970940
+
+Package: ruby-dbm
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, libdb47
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970863
+
+Package: libcurl
+Version: 7.40.0-3.1
+Depends: libc, librt, libpthread, libpolarssl
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968709
+Auto-Installed: yes
+
+Package: python-db
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light, libdb47
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042889
+Auto-Installed: yes
+
+Package: ruby-xmlrpc
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-rexml, ruby-webrick
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970993
+Auto-Installed: yes
+
+Package: ruby-json
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-datetime, ruby-misc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970921
+Auto-Installed: yes
+
+Package: libpcre
+Version: 8.38-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968189
+Auto-Installed: yes
+
+Package: ruby-cgi
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-filelib, ruby-pstore
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970836
+
+Package: python-decimal
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+Auto-Installed: yes
+
+Package: ruby-filelib
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-enc, ruby-misc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970829
+Auto-Installed: yes
+
+Package: python-light
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-base, libffi, libbz2
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042872
+Auto-Installed: yes
+
+Package: python-distutils
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: zsh
+Version: 5.0.6-1
+Depends: libc, librt, libpthread, libncurses, libncursesw, libpcre, librt
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554968191
+
+Package: ruby-pstore
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-digest, ruby-enc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970834
+Auto-Installed: yes
+
+Package: python-pydoc
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: python
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light, python-codecs, python-compiler, python-ctypes, python-db, python-decimal, python-distutils, python-email, python-gdbm, python-logging, python-multiprocessing, python-ncurses, python-openssl, python-pydoc, python-sqlite3, python-unittest, python-xml
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042867
+Auto-Installed: yes
+
+Package: python-base
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, libpthread, zlib
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042877
+Auto-Installed: yes
+
+Package: ruby-powerassert
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-ripper
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970954
+
+Package: ruby-digest
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970836
+Auto-Installed: yes
+
+Package: python-unittest
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: libxml2
+Version: 2.9.2-3
+Depends: libc, librt, libpthread, libpthread, zlib
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970863
+Auto-Installed: yes
+
+Package: ruby-rinda
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-drb
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970970
+
+Package: ruby
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, libruby
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970824
+
+Package: ruby-yaml
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-dbm, ruby-pstore, ruby-psych
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970927
+Auto-Installed: yes
+
+Package: ruby-racc
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970922
+Auto-Installed: yes
+
+Package: python-email
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554969963
+Auto-Installed: yes
+
+Package: simplejson
+Version: 3.6.5-1
+Depends: libc, librt, libpthread, python
+Status: install user not-installed
+Architecture: arm64
+
+Package: ruby-testunit
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-csv, ruby-erb, ruby-optparse, ruby-powerassert, ruby-prettyprint, ruby-rexml, ruby-yaml
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970986
+Auto-Installed: yes
+
+Package: ruby-webrick
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-erb, ruby-net, ruby-patterns, ruby-rbconfig
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970991
+Auto-Installed: yes
+
+Package: python-ctypes
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042887
+Auto-Installed: yes
+
+Package: python-gdbm
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light, libgdbm
+Status: install ok not-installed
+Architecture: arm64
+
+Package: python-ncurses
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light, libncurses
+Status: install ok not-installed
+Architecture: arm64
+
+Package: ruby-math
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-patterns
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970920
+Auto-Installed: yes
+
+Package: libgcc
+Version: 4.8-linaro-1
+Status: install hold installed
+Essential: yes
+Architecture: arm64
+Installed-Time: 1554968179
+Auto-Installed: yes
+
+Package: ruby-gdbm
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, libgdbm
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970899
+
+Package: libreadline
+Version: 6.3-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970964
+Auto-Installed: yes
+
+Package: libffi
+Version: 3.0.13-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970896
+Auto-Installed: yes
+
+Package: libubox
+Version: 2015-06-14-d1c66ef1131d14f0ed197b368d03f71b964e45f8
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554969946
+Auto-Installed: yes
+
+Package: ruby-enc
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970831
+Auto-Installed: yes
+
+Package: ruby-rss
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-net, ruby-nkf, ruby-rexml
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970973
+
+Package: librt
+Version: 2.19-1
+Depends: libpthread
+Status: install hold installed
+Essential: yes
+Architecture: arm64
+Installed-Time: 1554968176
+Auto-Installed: yes
+
+Package: python-sqlite3
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light, libsqlite3
+Status: install ok not-installed
+Architecture: arm64
+
+Package: ruby-csv
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-patterns, ruby-datetime, ruby-enc
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970842
+
+Package: ruby-ripper
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970954
+Auto-Installed: yes
+
+Package: ruby-drb
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-filelib, ruby-patterns, ruby-socket
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970870
+
+Package: ruby-rake
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-datetime, ruby-filelib, ruby-optparse, ruby-patterns, ruby-rbconfig
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970924
+Auto-Installed: yes
+
+Package: ruby-sdbm
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970975
+
+Package: python-compiler
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042885
+Auto-Installed: yes
+
+Package: libncurses
+Version: 5.9-2
+Depends: libc, librt, libpthread, terminfo
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968182
+Auto-Installed: yes
+
+Package: python-xml
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: ca-certificates
+Version: 20150426
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968717
+Auto-Installed: yes
+
+Package: libpolarssl
+Version: 1.3.14-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968712
+Auto-Installed: yes
+
+Package: ruby-unicodenormalize
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-enc, ruby-enc-extra
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970988
+Auto-Installed: yes
+
+Package: ruby-erb
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-cgi
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970893
+
+Package: vim-full
+Version: 7.4-2
+Depends: libc, librt, libpthread, libncurses
+Status: install user installed
+Architecture: arm64
+Conffiles:
+ /usr/share/vim/vimrc 47ecdd0f38eb21d77ed1cfc51e84c401ee
+Installed-Time: 1554969569
+
+Package: ruby-optparse
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-misc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970925
+Auto-Installed: yes
+
+Package: ruby-uri
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-socket, ruby-enc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970910
+Auto-Installed: yes
+
+Package: python-openssl
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light, libopenssl
+Status: install ok not-installed
+Architecture: arm64
+
+Package: libubus
+Version: 2015-05-25-f361bfa5fcb2daadf3b160583ce665024f8d108e
+Depends: libc, librt, libpthread, libubox
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554969946
+
+Package: ruby-enc-extra
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-enc
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970892
+
+Package: ruby-psych
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-bigdecimal, ruby-datetime, ruby-misc, ruby-enc, libyaml
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970929
+Auto-Installed: yes
+
+Package: python-multiprocessing
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: git
+Version: 2.3.5-1
+Depends: libc, librt, libpthread, libopenssl, libpthread, librt
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554968597
+
+Package: ruby-prettyprint
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-misc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970865
+Auto-Installed: yes
+
+Package: ruby-io-console
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970935
+
+Package: zlib
+Version: 1.2.8-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968596
+Auto-Installed: yes
+
+Package: libncursesw
+Version: 5.9-2
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968186
+Auto-Installed: yes
+
+Package: libyaml
+Version: 0.1.6-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970931
+Auto-Installed: yes
+
+Package: ruby-openssl
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-enc, libopenssl, ruby-misc
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970950
+
+Package: python-logging
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Status: install ok not-installed
+Architecture: arm64
+
+Package: ruby-bigdecimal
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970826
+
+Package: libgmp
+Version: 6.0.0-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970824
+Auto-Installed: yes
+
+Package: libsqlite3
+Version: 3081101-1
+Depends: libc, librt, libpthread, libpthread
+Status: install ok not-installed
+Architecture: arm64
+
+Package: vim-runtime
+Version: 7.4-2
+Depends: libc, librt, libpthread, libncurses
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554969536
+
+Package: ruby-patterns
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-multithread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970839
+Auto-Installed: yes
+
+Package: ruby-multithread
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-misc
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970840
+Auto-Installed: yes
+
+Package: ruby-net
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-datetime, ruby-digest, ruby-filelib, ruby-uri
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970908
+Auto-Installed: yes
+
+Package: ruby-mkmf
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-filelib, ruby-optparse, ruby-rbconfig
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970942
+
+Package: libbz2
+Version: 1.0.6-2
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1555042879
+Auto-Installed: yes
+
+Package: ruby-debuglib
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-multithread, ruby-prettyprint
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970865
+
+Package: git-http
+Version: 2.3.5-1
+Depends: libc, librt, libpthread, git, libcurl, ca-certificates
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554968718
+
+Package: ruby-stdlib
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-misc, ruby-bigdecimal, ruby-cgi, ruby-csv, ruby-datetime, ruby-dbm, ruby-debuglib, ruby-digest, ruby-drb, ruby-enc, ruby-enc-extra, ruby-erb, ruby-gdbm, ruby-gems, ruby-json, ruby-io-console, ruby-irb, ruby-fiddle, ruby-filelib, ruby-logger, ruby-math, ruby-minitest, ruby-mkmf, ruby-multithread, ruby-nkf, ruby-net, ruby-openssl, ruby-optparse, ruby-patterns, ruby-powerassert, ruby-prettyprint, ruby-pstore, ruby-psych, ruby-racc, ruby-rake, ruby-rbconfig, ruby-rdoc, ruby-readline, ruby-rexml, ruby-rinda, ruby-ripper, ruby-rss, ruby-sdbm, ruby-shell, ruby-socket, ruby-testunit, ruby-unicodenormalize, ruby-uri, ruby-webrick, ruby-xmlrpc, ruby-yaml, ruby-zlib
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970993
+
+Package: libgdbm
+Version: 1.11-1
+Depends: libc, librt, libpthread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970899
+Auto-Installed: yes
+
+Package: ruby-rexml
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-patterns, ruby-enc
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970968
+
+Package: ruby-misc
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970833
+Auto-Installed: yes
+
+Package: ruby-gems
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-net, ruby-rdoc
+Status: install user installed
+Architecture: arm64
+Installed-Time: 1554970933
+
+Package: ruby-irb
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-debuglib, ruby-filelib, ruby-math
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970918
+Auto-Installed: yes
+
+Package: ruby-rdoc
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-erb, ruby-irb, ruby-json, ruby-racc, ruby-rake, ruby-yaml, ruby-zlib
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970916
+Auto-Installed: yes
+
+Package: libopenssl
+Version: 1.0.2g-1
+Depends: libc, librt, libpthread, zlib
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554968595
+Auto-Installed: yes
+
+Package: libdb47
+Version: 4.7.25.4.NC-4.1
+Depends: libc, librt, libpthread, libxml2
+Provides: libdb47-full
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970855
+Auto-Installed: yes
+
+Package: ruby-socket
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-multithread
+Status: install ok installed
+Architecture: arm64
+Installed-Time: 1554970870
+Auto-Installed: yes
+

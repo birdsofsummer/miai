@@ -1,0 +1,14 @@
+Package: kmod-lib80211
+Version: 3.14.29+2016-01-10-1
+Depends: kernel (=3.14.29-1-36560070b2f0ab52748c2eca5062600b), kmod-cfg80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: meson
+Installed-Size: 12728
+Description:  Kernel modules for 802.11 Networking stack
+ Includes:
+ - lib80211
+ - lib80211_crypt_wep
+ - lib80211_crypt_tkip
+ - lib80211_crytp_ccmp

@@ -1,0 +1,23 @@
+config core 'version'
+	# ROM ver
+	option ROM '1.42.6'
+	# channel
+	option CHANNEL 'release'
+	# hardware platform
+	option HARDWARE 'S12'
+	# Bootload
+	option UBOOT '1.0.2'
+	# Linux Kernel ver
+	option LINUX '0.0.1'
+	# RAMFS ver
+	option RAMFS '0.0.1'
+	# SQUASHFS ver
+	option SQAFS '0.0.1'
+	# ROOTFS ver
+	option ROOTFS '0.0.1'
+	#build time
+	option BUILDTIME 'Sat, 29 Dec 2018 16:32:57 +0800'
+	#build timestamp
+	option BUILDTS '1546072377'
+	#build git tag
+	option GTAG 'commit b9e9b6640c2491c7a77a22612e47790e6c8c0356'

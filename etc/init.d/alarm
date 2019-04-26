@@ -1,0 +1,54 @@
+#!/bin/sh /etc/rc.common
+
+START=70
+
+USE_PROCD=1
+EXTRA_COMMANDS="micmute_remove"
+
+alarm_log() {
+    logger -t /etc/init.d/alarm[$$] -p 3 "$*"
+    echo $*
+}
+
+country_prepare()
+{
+  link_dir="/data/workday"
+  file1="/etc/workday/unnomal_holiday.cfg"
+  file2="/etc/workday/unnomal_workday.cfg"
+
+  rm -rf $link_dir
+
+  mkdir -p $link_dir
+  country=$(uci -c /data/etc/ get binfo.binfo.country)
+  file_ext="."$country
+  [ ! -f $file1$file_ext -o ! -f $file2$file_ext ] && {
+    alarm_log "file not exist, country $country"
+    file_ext=""
+  }
+
+  [ "$country" == "CN" ] && {
+    alarm_log "country is CN"
+    file_ext=""
+  }
+  
+  alarm_log "final file ext $file_ext, country $country"
+  ln -s -f $file1$file_ext $link_dir/unnomal_holiday.cfg
+  ln -s -f $file2$file_ext $link_dir/unnomal_workday.cfg
+  sync
+}
+
+start_service() {
+  /usr/bin/alarm_translate.sh
+  country_prepare
+  #mkdir -p "/data/.mediaplayerconfig/DataBase/"
+  sync
+  procd_open_instance
+  procd_set_param command /usr/bin/alarmd
+
+  procd_set_param respawn 3600 5 0
+  procd_close_instance
+}
+
+
+
+

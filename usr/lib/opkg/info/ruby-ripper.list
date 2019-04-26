@@ -1,0 +1,6 @@
+/usr/lib/ruby/2.2/ripper.rb
+/usr/lib/ruby/2.2/aarch64-linux-gnu/ripper.so
+/usr/lib/ruby/2.2/ripper/lexer.rb
+/usr/lib/ruby/2.2/ripper/core.rb
+/usr/lib/ruby/2.2/ripper/filter.rb
+/usr/lib/ruby/2.2/ripper/sexp.rb

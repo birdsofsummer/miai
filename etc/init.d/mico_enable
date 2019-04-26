@@ -1,0 +1,9 @@
+#!/bin/sh /etc/rc.common
+START=96
+start() {
+  sh '/root/mico.sh' &
+}
+
+stop() {
+  kill `ps|grep 'sh /root/mico.sh'|grep -v grep|awk '{print $1}'`
+}

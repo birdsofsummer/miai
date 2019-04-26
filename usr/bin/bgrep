@@ -1,0 +1,4 @@
+echo $1
+#echo $path|awk '{for(i=0;i<NF;i++) {print system("ls "$(i+1))}}'
+echo $path
+#|awk '{for(i=0;i<NF;i++) {print $(i+1)}}'

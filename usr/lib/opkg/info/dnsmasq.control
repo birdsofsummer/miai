@@ -1,0 +1,10 @@
+Package: dnsmasq
+Version: 2.78-5
+Depends: libc, librt, libpthread
+Source: /home/jenkins/mico/mi/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: mi
+Architecture: meson
+Installed-Size: 101213
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.

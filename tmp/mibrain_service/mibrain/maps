@@ -1,0 +1,74 @@
+00400000-00404000 r-xp 00000000 00:0e 391                                /usr/bin/mibrain_service
+00414000-00415000 rwxp 00004000 00:0e 391                                /usr/bin/mibrain_service
+34512000-34533000 rwxp 00000000 00:00 0                                  [heap]
+34533000-34555000 rwxp 00000000 00:00 0                                  [heap]
+7f937c0000-7f937c1000 rwxs 00000000 00:04 8271108                        /dev/zero (deleted)
+7f937c1000-7f937c2000 rwxs 00000000 00:04 7736076                        /dev/zero (deleted)
+7f937c2000-7f937c3000 rwxs 00000000 00:04 7208484                        /dev/zero (deleted)
+7f937c3000-7f937c4000 rwxs 00000000 00:04 6674993                        /dev/zero (deleted)
+7f937c4000-7f937c5000 rwxs 00000000 00:04 6144092                        /dev/zero (deleted)
+7f937c5000-7f937c6000 rwxs 00000000 00:04 5479720                        /dev/zero (deleted)
+7f937c6000-7f939c6000 rwxs 00000000 00:13 150                            /data/mibrain/mibrain_asr_nlp.rcd
+7f939c6000-7f939db000 r-xp 00000000 00:0e 3565                           /lib/libpthread-2.19.so
+7f939db000-7f939eb000 ---p 00015000 00:0e 3565                           /lib/libpthread-2.19.so
+7f939eb000-7f939ec000 r-xp 00015000 00:0e 3565                           /lib/libpthread-2.19.so
+7f939ec000-7f939ed000 rwxp 00016000 00:0e 3565                           /lib/libpthread-2.19.so
+7f939ed000-7f939f1000 rwxp 00000000 00:00 0 
+7f939f1000-7f93a78000 r-xp 00000000 00:0e 219                            /lib/libm-2.19.so
+7f93a78000-7f93a87000 ---p 00087000 00:0e 219                            /lib/libm-2.19.so
+7f93a87000-7f93a88000 r-xp 00086000 00:0e 219                            /lib/libm-2.19.so
+7f93a88000-7f93a89000 rwxp 00087000 00:0e 219                            /lib/libm-2.19.so
+7f93a89000-7f93b55000 r-xp 00000000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7f93b55000-7f93b64000 ---p 000cc000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7f93b64000-7f93b6b000 r-xp 000cb000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7f93b6b000-7f93b6e000 rwxp 000d2000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7f93b6e000-7f93b82000 rwxp 00000000 00:00 0 
+7f93b82000-7f93b84000 r-xp 00000000 00:0e 232                            /lib/libdl-2.19.so
+7f93b84000-7f93b93000 ---p 00002000 00:0e 232                            /lib/libdl-2.19.so
+7f93b93000-7f93b94000 r-xp 00001000 00:0e 232                            /lib/libdl-2.19.so
+7f93b94000-7f93b95000 rwxp 00002000 00:0e 232                            /lib/libdl-2.19.so
+7f93b95000-7f93c86000 r-xp 00000000 00:0e 1022                           /usr/lib/libmibrainsdk.so
+7f93c86000-7f93c95000 ---p 000f1000 00:0e 1022                           /usr/lib/libmibrainsdk.so
+7f93c95000-7f93cad000 rwxp 000f0000 00:0e 1022                           /usr/lib/libmibrainsdk.so
+7f93cad000-7f93cb0000 rwxp 00000000 00:00 0 
+7f93cb0000-7f93dc6000 r-xp 00000000 00:0e 229                            /lib/libc-2.19.so
+7f93dc6000-7f93dd6000 ---p 00116000 00:0e 229                            /lib/libc-2.19.so
+7f93dd6000-7f93dda000 r-xp 00116000 00:0e 229                            /lib/libc-2.19.so
+7f93dda000-7f93ddc000 rwxp 0011a000 00:0e 229                            /lib/libc-2.19.so
+7f93ddc000-7f93de0000 rwxp 00000000 00:00 0 
+7f93de0000-7f93df0000 r-xp 00000000 00:0e 3569                           /lib/libgcc_s.so.1
+7f93df0000-7f93dff000 ---p 00010000 00:0e 3569                           /lib/libgcc_s.so.1
+7f93dff000-7f93e00000 rwxp 0000f000 00:0e 3569                           /lib/libgcc_s.so.1
+7f93e00000-7f93e03000 r-xp 00000000 00:0e 901                            /usr/lib/libmibrain-common-util.so
+7f93e03000-7f93e12000 ---p 00003000 00:0e 901                            /usr/lib/libmibrain-common-util.so
+7f93e12000-7f93e13000 rwxp 00002000 00:0e 901                            /usr/lib/libmibrain-common-util.so
+7f93e13000-7f93e2a000 r-xp 00000000 00:0e 890                            /usr/lib/libmibrain-common-sdk.so
+7f93e2a000-7f93e39000 ---p 00017000 00:0e 890                            /usr/lib/libmibrain-common-sdk.so
+7f93e39000-7f93e3a000 rwxp 00016000 00:0e 890                            /usr/lib/libmibrain-common-sdk.so
+7f93e3a000-7f93e3c000 rwxp 00000000 00:00 0 
+7f93e3c000-7f93e3e000 r-xp 00000000 00:0e 281                            /lib/libblobmsg_json.so
+7f93e3e000-7f93e4d000 ---p 00002000 00:0e 281                            /lib/libblobmsg_json.so
+7f93e4d000-7f93e4e000 rwxp 00001000 00:0e 281                            /lib/libblobmsg_json.so
+7f93e4e000-7f93e56000 r-xp 00000000 00:0e 867                            /usr/lib/libjson-c.so.2.0.1
+7f93e56000-7f93e65000 ---p 00008000 00:0e 867                            /usr/lib/libjson-c.so.2.0.1
+7f93e65000-7f93e66000 rwxp 00007000 00:0e 867                            /usr/lib/libjson-c.so.2.0.1
+7f93e66000-7f93e6f000 r-xp 00000000 00:0e 7268                           /lib/libubox.so
+7f93e6f000-7f93e7e000 ---p 00009000 00:0e 7268                           /lib/libubox.so
+7f93e7e000-7f93e7f000 rwxp 00008000 00:0e 7268                           /lib/libubox.so
+7f93e7f000-7f93e83000 r-xp 00000000 00:0e 7272                           /lib/libubus.so
+7f93e83000-7f93e93000 ---p 00004000 00:0e 7272                           /lib/libubus.so
+7f93e93000-7f93e94000 rwxp 00004000 00:0e 7272                           /lib/libubus.so
+7f93e94000-7f93ead000 r-xp 00000000 00:0e 208                            /lib/ld-2.19.so
+7f93ead000-7f93eae000 rwxs 00000000 00:04 4802406                        /dev/zero (deleted)
+7f93eae000-7f93eaf000 rwxs 00000000 00:04 4124630                        /dev/zero (deleted)
+7f93eaf000-7f93eb0000 rwxs 00000000 00:04 3460168                        /dev/zero (deleted)
+7f93eb0000-7f93eb1000 rwxs 00000000 00:04 2779105                        /dev/zero (deleted)
+7f93eb1000-7f93eb2000 rwxs 00000000 00:04 2105363                        /dev/zero (deleted)
+7f93eb2000-7f93eb3000 rwxs 00000000 00:04 1435106                        /dev/zero (deleted)
+7f93eb3000-7f93eb4000 rwxs 00000000 00:04 1197025                        /dev/zero (deleted)
+7f93eb4000-7f93ebb000 rwxp 00000000 00:00 0 
+7f93ebb000-7f93ebc000 r-xp 00000000 00:00 0                              [vdso]
+7f93ebc000-7f93ebd000 r--p 00000000 00:00 0                              [vvar]
+7f93ebd000-7f93ebe000 r-xp 00019000 00:0e 208                            /lib/ld-2.19.so
+7f93ebe000-7f93ec0000 rwxp 0001a000 00:0e 208                            /lib/ld-2.19.so
+7ff89a8000-7ff89c9000 rwxp 00000000 00:00 0                              [stack]

@@ -1,0 +1,1032 @@
+[20181229 16:33:02] [INFO] Set log level to: 3
+[20181229 16:33:02] [INFO] Set TCP host to "ott.io.mi.com"
+[20181229 16:33:02] [INFO] Set UDP host to "ot.io.mi.com"
+[20181229 16:33:02] [INFO] OT smart conn sockfd: 4
+[20181229 16:33:02] [INFO] OT agent listen fd: 5
+[20181229 16:33:02] [INFO] BT conn listen fd: 6
+[20181229 16:33:02] [INFO] Timer fd: 10, interval: 5000 ms
+[20181229 16:33:02] [INFO] Sync timer fd: 15, interval: 0 ms
+[20181229 16:33:02] [INFO] ACK timer fd: 17, timeout: 0 ms
+[20181229 16:33:02] [INFO] pollfds[0]: 4
+[20181229 16:33:02] [INFO] pollfds[1]: 5
+[20181229 16:33:02] [INFO] pollfds[2]: 6
+[20181229 16:33:02] [INFO] pollfds[3]: 10
+[20181229 16:33:02] [INFO] pollfds[4]: 15
+[20181229 16:33:02] [INFO] pollfds[5]: 17
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.helper_ready"} length:35 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.helper_ready.
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.hello.
+[20181229 16:33:02] [INFO] STATE: (0)
+[20181229 16:33:02] [DEBUG] check_device_info:1322, didkeyreq_timestamp: 0, didkeyreq_interval: 30.
+[20181229 16:33:02] [DEBUG] cmd_internal_request_dinfo
+[20181229 16:33:02] [WARNING] OT agent internalfd closed: 18
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.response_dinfo","params":{"did":78066404,"key":"4UWx54QovC3D5Yib","vendor":"xiaomi","mac":"3C:BD:3E:63:AE:47","model":"xiaomi.wifispeaker.s12"}} length:165 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.response_dinfo.
+[20181229 16:33:02] [INFO] STATE: (0) -> STATE_DIDKEY_DONE
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.hello.
+[20181229 16:33:02] [INFO] STATE: (3)
+[20181229 16:33:02] [DEBUG] cmd_internal_request_dtoken
+[20181229 16:33:02] [WARNING] OT agent internalfd closed: 18
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.response_dtoken","params":"RcReN2Hfs0BkqIvG"} length:66 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.response_dtoken.
+[20181229 16:33:02] [INFO] STATE: (3) -> STATE_TOKEN_DONE
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.hello.
+[20181229 16:33:02] [INFO] STATE: (4)
+[20181229 16:33:02] [WARNING] OT agent internalfd closed: 18
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.res_wifi_conf_status","params":1} length:54 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.res_wifi_conf_status.
+[20181229 16:33:02] [INFO] STATE: (4) -> STATE_WIFI_STA_MODE
+[20181229 16:33:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:02] [WARNING] no server detected.
+[20181229 16:33:02] [WARNING] internet connection failed
+[20181229 16:33:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:02] [INFO] OT agent listen accept sockfd: 19
+[20181229 16:33:02] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:33:02] [DEBUG] Got _internal.hello.
+[20181229 16:33:02] [INFO] STATE: (6)
+[20181229 16:33:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:07] [WARNING] no server detected.
+[20181229 16:33:07] [WARNING] internet connection failed
+[20181229 16:33:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:12] [WARNING] no server detected.
+[20181229 16:33:12] [WARNING] internet connection failed
+[20181229 16:33:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:17] [WARNING] no server detected.
+[20181229 16:33:17] [WARNING] internet connection failed
+[20181229 16:33:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:22] [WARNING] no server detected.
+[20181229 16:33:22] [WARNING] internet connection failed
+[20181229 16:33:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:27] [WARNING] no server detected.
+[20181229 16:33:27] [WARNING] internet connection failed
+[20181229 16:33:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:32] [WARNING] no server detected.
+[20181229 16:33:32] [WARNING] internet connection failed
+[20181229 16:33:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:37] [WARNING] no server detected.
+[20181229 16:33:37] [WARNING] internet connection failed
+[20181229 16:33:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:42] [WARNING] no server detected.
+[20181229 16:33:42] [WARNING] internet connection failed
+[20181229 16:33:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:47] [WARNING] no server detected.
+[20181229 16:33:47] [WARNING] internet connection failed
+[20181229 16:33:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:52] [WARNING] no server detected.
+[20181229 16:33:52] [WARNING] internet connection failed
+[20181229 16:33:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:33:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:33:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:33:57] [WARNING] no server detected.
+[20181229 16:33:57] [WARNING] internet connection failed
+[20181229 16:33:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:02] [WARNING] no server detected.
+[20181229 16:34:02] [WARNING] internet connection failed
+[20181229 16:34:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:07] [WARNING] no server detected.
+[20181229 16:34:07] [WARNING] internet connection failed
+[20181229 16:34:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:12] [WARNING] no server detected.
+[20181229 16:34:12] [WARNING] internet connection failed
+[20181229 16:34:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:17] [WARNING] no server detected.
+[20181229 16:34:17] [WARNING] internet connection failed
+[20181229 16:34:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:22] [WARNING] no server detected.
+[20181229 16:34:22] [WARNING] internet connection failed
+[20181229 16:34:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:27] [WARNING] no server detected.
+[20181229 16:34:27] [WARNING] internet connection failed
+[20181229 16:34:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:32] [WARNING] no server detected.
+[20181229 16:34:32] [WARNING] internet connection failed
+[20181229 16:34:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:37] [WARNING] no server detected.
+[20181229 16:34:37] [WARNING] internet connection failed
+[20181229 16:34:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:42] [WARNING] no server detected.
+[20181229 16:34:42] [WARNING] internet connection failed
+[20181229 16:34:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:47] [WARNING] no server detected.
+[20181229 16:34:47] [WARNING] internet connection failed
+[20181229 16:34:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:52] [WARNING] no server detected.
+[20181229 16:34:52] [WARNING] internet connection failed
+[20181229 16:34:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:34:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:34:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:34:57] [WARNING] no server detected.
+[20181229 16:34:57] [WARNING] internet connection failed
+[20181229 16:34:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:02] [WARNING] no server detected.
+[20181229 16:35:02] [WARNING] internet connection failed
+[20181229 16:35:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:07] [WARNING] no server detected.
+[20181229 16:35:07] [WARNING] internet connection failed
+[20181229 16:35:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:12] [WARNING] no server detected.
+[20181229 16:35:12] [WARNING] internet connection failed
+[20181229 16:35:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:17] [WARNING] no server detected.
+[20181229 16:35:17] [WARNING] internet connection failed
+[20181229 16:35:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:22] [WARNING] no server detected.
+[20181229 16:35:22] [WARNING] internet connection failed
+[20181229 16:35:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:27] [WARNING] no server detected.
+[20181229 16:35:27] [WARNING] internet connection failed
+[20181229 16:35:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:32] [WARNING] no server detected.
+[20181229 16:35:32] [WARNING] internet connection failed
+[20181229 16:35:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:37] [WARNING] no server detected.
+[20181229 16:35:37] [WARNING] internet connection failed
+[20181229 16:35:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:42] [WARNING] no server detected.
+[20181229 16:35:42] [WARNING] internet connection failed
+[20181229 16:35:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:47] [WARNING] no server detected.
+[20181229 16:35:47] [WARNING] internet connection failed
+[20181229 16:35:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:52] [WARNING] no server detected.
+[20181229 16:35:52] [WARNING] internet connection failed
+[20181229 16:35:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:35:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:35:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:35:57] [WARNING] no server detected.
+[20181229 16:35:57] [WARNING] internet connection failed
+[20181229 16:35:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:02] [WARNING] no server detected.
+[20181229 16:36:02] [WARNING] internet connection failed
+[20181229 16:36:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:07] [WARNING] no server detected.
+[20181229 16:36:07] [WARNING] internet connection failed
+[20181229 16:36:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:12] [WARNING] no server detected.
+[20181229 16:36:12] [WARNING] internet connection failed
+[20181229 16:36:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:17] [WARNING] no server detected.
+[20181229 16:36:17] [WARNING] internet connection failed
+[20181229 16:36:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:22] [WARNING] no server detected.
+[20181229 16:36:22] [WARNING] internet connection failed
+[20181229 16:36:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:27] [WARNING] no server detected.
+[20181229 16:36:27] [WARNING] internet connection failed
+[20181229 16:36:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:32] [WARNING] no server detected.
+[20181229 16:36:32] [WARNING] internet connection failed
+[20181229 16:36:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:37] [WARNING] no server detected.
+[20181229 16:36:37] [WARNING] internet connection failed
+[20181229 16:36:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:42] [WARNING] no server detected.
+[20181229 16:36:42] [WARNING] internet connection failed
+[20181229 16:36:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:47] [WARNING] no server detected.
+[20181229 16:36:47] [WARNING] internet connection failed
+[20181229 16:36:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:52] [WARNING] no server detected.
+[20181229 16:36:52] [WARNING] internet connection failed
+[20181229 16:36:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:36:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:36:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:36:57] [WARNING] no server detected.
+[20181229 16:36:57] [WARNING] internet connection failed
+[20181229 16:36:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:02] [WARNING] no server detected.
+[20181229 16:37:02] [WARNING] internet connection failed
+[20181229 16:37:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:07] [WARNING] no server detected.
+[20181229 16:37:07] [WARNING] internet connection failed
+[20181229 16:37:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:12] [WARNING] no server detected.
+[20181229 16:37:12] [WARNING] internet connection failed
+[20181229 16:37:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:17] [WARNING] no server detected.
+[20181229 16:37:17] [WARNING] internet connection failed
+[20181229 16:37:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:22] [WARNING] no server detected.
+[20181229 16:37:22] [WARNING] internet connection failed
+[20181229 16:37:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:27] [WARNING] no server detected.
+[20181229 16:37:27] [WARNING] internet connection failed
+[20181229 16:37:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:32] [WARNING] no server detected.
+[20181229 16:37:32] [WARNING] internet connection failed
+[20181229 16:37:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:37] [WARNING] no server detected.
+[20181229 16:37:37] [WARNING] internet connection failed
+[20181229 16:37:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:42] [WARNING] no server detected.
+[20181229 16:37:42] [WARNING] internet connection failed
+[20181229 16:37:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:47] [WARNING] no server detected.
+[20181229 16:37:47] [WARNING] internet connection failed
+[20181229 16:37:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:52] [WARNING] no server detected.
+[20181229 16:37:52] [WARNING] internet connection failed
+[20181229 16:37:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:37:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:37:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:37:57] [WARNING] no server detected.
+[20181229 16:37:57] [WARNING] internet connection failed
+[20181229 16:37:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:02] [WARNING] no server detected.
+[20181229 16:38:02] [WARNING] internet connection failed
+[20181229 16:38:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:07] [WARNING] no server detected.
+[20181229 16:38:07] [WARNING] internet connection failed
+[20181229 16:38:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:12] [WARNING] no server detected.
+[20181229 16:38:12] [WARNING] internet connection failed
+[20181229 16:38:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:17] [WARNING] no server detected.
+[20181229 16:38:17] [WARNING] internet connection failed
+[20181229 16:38:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:22] [WARNING] no server detected.
+[20181229 16:38:22] [WARNING] internet connection failed
+[20181229 16:38:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:27] [WARNING] no server detected.
+[20181229 16:38:27] [WARNING] internet connection failed
+[20181229 16:38:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:32] [WARNING] no server detected.
+[20181229 16:38:32] [WARNING] internet connection failed
+[20181229 16:38:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:37] [WARNING] no server detected.
+[20181229 16:38:37] [WARNING] internet connection failed
+[20181229 16:38:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:42] [WARNING] no server detected.
+[20181229 16:38:42] [WARNING] internet connection failed
+[20181229 16:38:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:47] [WARNING] no server detected.
+[20181229 16:38:47] [WARNING] internet connection failed
+[20181229 16:38:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:52] [WARNING] no server detected.
+[20181229 16:38:52] [WARNING] internet connection failed
+[20181229 16:38:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:38:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:38:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:38:57] [WARNING] no server detected.
+[20181229 16:38:57] [WARNING] internet connection failed
+[20181229 16:38:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:02] [WARNING] no server detected.
+[20181229 16:39:02] [WARNING] internet connection failed
+[20181229 16:39:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:07] [WARNING] no server detected.
+[20181229 16:39:07] [WARNING] internet connection failed
+[20181229 16:39:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:12] [WARNING] no server detected.
+[20181229 16:39:12] [WARNING] internet connection failed
+[20181229 16:39:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:17] [WARNING] no server detected.
+[20181229 16:39:17] [WARNING] internet connection failed
+[20181229 16:39:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:22] [WARNING] no server detected.
+[20181229 16:39:22] [WARNING] internet connection failed
+[20181229 16:39:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:27] [WARNING] no server detected.
+[20181229 16:39:27] [WARNING] internet connection failed
+[20181229 16:39:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:32] [WARNING] no server detected.
+[20181229 16:39:32] [WARNING] internet connection failed
+[20181229 16:39:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:37] [WARNING] no server detected.
+[20181229 16:39:37] [WARNING] internet connection failed
+[20181229 16:39:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:42] [WARNING] no server detected.
+[20181229 16:39:42] [WARNING] internet connection failed
+[20181229 16:39:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:47] [WARNING] no server detected.
+[20181229 16:39:47] [WARNING] internet connection failed
+[20181229 16:39:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:52] [WARNING] no server detected.
+[20181229 16:39:52] [WARNING] internet connection failed
+[20181229 16:39:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:39:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:39:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:39:57] [WARNING] no server detected.
+[20181229 16:39:57] [WARNING] internet connection failed
+[20181229 16:39:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:02] [WARNING] no server detected.
+[20181229 16:40:02] [WARNING] internet connection failed
+[20181229 16:40:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:07] [WARNING] no server detected.
+[20181229 16:40:07] [WARNING] internet connection failed
+[20181229 16:40:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:12] [WARNING] no server detected.
+[20181229 16:40:12] [WARNING] internet connection failed
+[20181229 16:40:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:17] [WARNING] no server detected.
+[20181229 16:40:17] [WARNING] internet connection failed
+[20181229 16:40:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:22] [WARNING] no server detected.
+[20181229 16:40:22] [WARNING] internet connection failed
+[20181229 16:40:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:27] [WARNING] no server detected.
+[20181229 16:40:27] [WARNING] internet connection failed
+[20181229 16:40:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:32] [WARNING] no server detected.
+[20181229 16:40:32] [WARNING] internet connection failed
+[20181229 16:40:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:37] [WARNING] no server detected.
+[20181229 16:40:37] [WARNING] internet connection failed
+[20181229 16:40:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:42] [WARNING] no server detected.
+[20181229 16:40:42] [WARNING] internet connection failed
+[20181229 16:40:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:47] [WARNING] no server detected.
+[20181229 16:40:47] [WARNING] internet connection failed
+[20181229 16:40:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:52] [WARNING] no server detected.
+[20181229 16:40:52] [WARNING] internet connection failed
+[20181229 16:40:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:40:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:40:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:40:57] [WARNING] no server detected.
+[20181229 16:40:57] [WARNING] internet connection failed
+[20181229 16:40:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:02] [WARNING] no server detected.
+[20181229 16:41:02] [WARNING] internet connection failed
+[20181229 16:41:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:07] [WARNING] no server detected.
+[20181229 16:41:07] [WARNING] internet connection failed
+[20181229 16:41:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:12] [WARNING] no server detected.
+[20181229 16:41:12] [WARNING] internet connection failed
+[20181229 16:41:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:17] [WARNING] no server detected.
+[20181229 16:41:17] [WARNING] internet connection failed
+[20181229 16:41:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:22] [WARNING] no server detected.
+[20181229 16:41:22] [WARNING] internet connection failed
+[20181229 16:41:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:27] [WARNING] no server detected.
+[20181229 16:41:27] [WARNING] internet connection failed
+[20181229 16:41:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:32] [WARNING] no server detected.
+[20181229 16:41:32] [WARNING] internet connection failed
+[20181229 16:41:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:37] [WARNING] no server detected.
+[20181229 16:41:37] [WARNING] internet connection failed
+[20181229 16:41:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:42] [WARNING] no server detected.
+[20181229 16:41:42] [WARNING] internet connection failed
+[20181229 16:41:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:47] [WARNING] no server detected.
+[20181229 16:41:47] [WARNING] internet connection failed
+[20181229 16:41:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:52] [WARNING] no server detected.
+[20181229 16:41:52] [WARNING] internet connection failed
+[20181229 16:41:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:41:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:41:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:41:57] [WARNING] no server detected.
+[20181229 16:41:57] [WARNING] internet connection failed
+[20181229 16:41:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:02] [WARNING] no server detected.
+[20181229 16:42:02] [WARNING] internet connection failed
+[20181229 16:42:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:07] [WARNING] no server detected.
+[20181229 16:42:07] [WARNING] internet connection failed
+[20181229 16:42:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:12] [WARNING] no server detected.
+[20181229 16:42:12] [WARNING] internet connection failed
+[20181229 16:42:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:17] [WARNING] no server detected.
+[20181229 16:42:17] [WARNING] internet connection failed
+[20181229 16:42:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:22] [WARNING] no server detected.
+[20181229 16:42:22] [WARNING] internet connection failed
+[20181229 16:42:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:27] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:27] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:27] [WARNING] no server detected.
+[20181229 16:42:27] [WARNING] internet connection failed
+[20181229 16:42:27] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:32] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:32] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:32] [WARNING] no server detected.
+[20181229 16:42:32] [WARNING] internet connection failed
+[20181229 16:42:32] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:37] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:37] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:37] [WARNING] no server detected.
+[20181229 16:42:37] [WARNING] internet connection failed
+[20181229 16:42:37] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:42] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:42] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:42] [WARNING] no server detected.
+[20181229 16:42:42] [WARNING] internet connection failed
+[20181229 16:42:42] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:47] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:47] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:47] [WARNING] no server detected.
+[20181229 16:42:47] [WARNING] internet connection failed
+[20181229 16:42:47] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:52] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:52] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:52] [WARNING] no server detected.
+[20181229 16:42:52] [WARNING] internet connection failed
+[20181229 16:42:52] [DEBUG] method_local_broadcast_msg()
+[20181229 16:42:57] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:42:57] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:42:57] [WARNING] no server detected.
+[20181229 16:42:57] [WARNING] internet connection failed
+[20181229 16:42:57] [DEBUG] method_local_broadcast_msg()
+[20181229 16:43:02] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:43:02] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:43:02] [WARNING] no server detected.
+[20181229 16:43:02] [WARNING] internet connection failed
+[20181229 16:43:02] [DEBUG] method_local_broadcast_msg()
+[20181229 16:43:07] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:43:07] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:43:07] [WARNING] no server detected.
+[20181229 16:43:07] [WARNING] internet connection failed
+[20181229 16:43:07] [DEBUG] method_local_broadcast_msg()
+[20181229 16:43:12] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:43:12] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:43:12] [WARNING] no server detected.
+[20181229 16:43:12] [WARNING] internet connection failed
+[20181229 16:43:12] [DEBUG] method_local_broadcast_msg()
+[20181229 16:43:17] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:43:17] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:43:17] [WARNING] no server detected.
+[20181229 16:43:17] [WARNING] internet connection failed
+[20181229 16:43:17] [DEBUG] method_local_broadcast_msg()
+[20181229 16:43:22] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:43:22] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:43:22] [WARNING] no server detected.
+[20181229 16:43:22] [WARNING] internet connection failed
+[20181229 16:43:22] [DEBUG] method_local_broadcast_msg()
+[20181229 16:43:27] [INFO] Set log level to: 3
+[20181229 16:43:27] [INFO] Set TCP host to "ott.io.mi.com"
+[20181229 16:43:27] [INFO] Set UDP host to "ot.io.mi.com"
+[20181229 16:43:27] [INFO] OT smart conn sockfd: 4
+[20181229 16:43:27] [INFO] OT agent listen fd: 5
+[20181229 16:43:27] [INFO] BT conn listen fd: 6
+[20181229 16:43:27] [INFO] Timer fd: 7, interval: 5000 ms
+[20181229 16:43:27] [INFO] Sync timer fd: 10, interval: 0 ms
+[20181229 16:43:27] [INFO] ACK timer fd: 15, timeout: 0 ms
+[20181229 16:43:27] [INFO] pollfds[0]: 4
+[20181229 16:43:27] [INFO] pollfds[1]: 5
+[20181229 16:43:27] [INFO] pollfds[2]: 6
+[20181229 16:43:27] [INFO] pollfds[3]: 7
+[20181229 16:43:27] [INFO] pollfds[4]: 10
+[20181229 16:43:27] [INFO] pollfds[5]: 15
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 17
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.helper_ready"} length:35 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.helper_ready.
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.hello.
+[20181229 16:43:27] [INFO] STATE: (0)
+[20181229 16:43:27] [DEBUG] check_device_info:1322, didkeyreq_timestamp: 0, didkeyreq_interval: 30.
+[20181229 16:43:27] [DEBUG] cmd_internal_request_dinfo
+[20181229 16:43:27] [WARNING] OT agent internalfd closed: 18
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.response_dinfo","params":{"did":78066404,"key":"4UWx54QovC3D5Yib","vendor":"xiaomi","mac":"3C:BD:3E:63:AE:47","model":"xiaomi.wifispeaker.s12"}} length:165 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.response_dinfo.
+[20181229 16:43:27] [INFO] STATE: (0) -> STATE_DIDKEY_DONE
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.hello.
+[20181229 16:43:27] [INFO] STATE: (3)
+[20181229 16:43:27] [DEBUG] cmd_internal_request_dtoken
+[20181229 16:43:27] [WARNING] OT agent internalfd closed: 18
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.response_dtoken","params":"RcReN2Hfs0BkqIvG"} length:66 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.response_dtoken.
+[20181229 16:43:27] [INFO] STATE: (3) -> STATE_TOKEN_DONE
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.hello.
+[20181229 16:43:27] [INFO] STATE: (4)
+[20181229 16:43:27] [WARNING] OT agent internalfd closed: 18
+[20181229 16:43:27] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:43:27] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.res_wifi_conf_status","params":1} length:54 bytes
+[20181229 16:43:27] [DEBUG] Got _internal.res_wifi_conf_status.
+[20181229 16:43:27] [INFO] STATE: (4) -> STATE_WIFI_STA_MODE
+[20181229 16:44:08] [INFO] getaddrinfo (ot.io.mi.com:8053): Temporary failure in name resolution
+[20181229 16:44:48] [INFO] getaddrinfo (ott.io.mi.com:80): Temporary failure in name resolution
+[20181229 16:44:48] [WARNING] no server detected.
+[20181229 16:44:48] [WARNING] internet connection failed
+[20181229 16:44:48] [DEBUG] method_local_broadcast_msg()
+[20181229 16:44:48] [INFO] OT agent listen accept sockfd: 19
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 124.251.57.7, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.65.254, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.65.237, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.67.33, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.65.242, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.65.243, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.65.244, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 124.251.57.3, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 124.251.57.4, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 124.251.57.6, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.212.107, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 120.92.67.34, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 183.84.6.237, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 183.84.6.238, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 183.84.6.239, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 183.84.6.241, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 183.84.6.242, port: 8053
+[20181229 16:44:48] [INFO] Add UDP server into list, host ip: 183.84.6.243, port: 8053
+[20181229 16:44:48] [INFO] Add TCP server into list, host ip: 183.84.5.203, port: 80
+[20181229 16:44:48] [INFO] Connect to server ip: 120.92.67.33, port: 8053
+[20181229 16:44:48] [INFO] OT cloud sockfd: 20
+[20181229 16:44:48] [INFO] STATE: (6) -> STATE_CLOUD_TRYING
+[20181229 16:44:48] [INFO] report_synctime
+[20181229 16:44:48] [INFO] internet connection succeed
+[20181229 16:44:48] [DEBUG] method_local_broadcast_msg()
+[20181229 16:44:48] [ERROR] miio_util.c,general_send_one: 18 send error: Broken pipe
+[20181229 16:44:48] [WARNING] POLLNVAL | POLLHUP | POLLERR fd: pollfds[7]: 18, revents: 0x00000019
+[20181229 16:44:48] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:44:48] [DEBUG] Got _internal.hello.
+[20181229 16:44:48] [INFO] STATE: (7)
+[20181229 16:44:48] [WARNING] OT agent internalfd closed: 19
+[20181229 16:44:48] [DEBUG] Time sync msg from server
+[20181229 16:44:48] [INFO] sync time with server, server: 1556232870, local(mono): 718, diff: 1556232152
+[20181229 16:44:49] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:44:49] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:44:49] [DEBUG] Got _internal.hello.
+[20181229 16:44:49] [INFO] STATE: (7)
+[20181229 16:44:50] [DEBUG] ot_agent_recv_handler_one(): fd:17, msg:{"id":0,"result":["ok"]}{"id":0,"result":["ok"]} length:48 bytes
+[20181229 16:44:50] [INFO] ACK, id:0, fd:17, to:cloud
+[20181229 16:44:50] [INFO] ACK, id:0, fd:17, to:cloud
+[20181229 16:44:53] [INFO] report_synctime
+[20181229 16:44:53] [DEBUG] Time sync msg from server
+[20181229 16:44:53] [INFO] sync time with server, server: 1556232875, local(mono): 723, diff: 1556232152
+[20181229 16:44:53] [WARNING] OT agent internalfd closed: 18
+[20181229 16:44:53] [INFO] OT agent listen accept sockfd: 18
+[20181229 16:44:53] [DEBUG] ot_agent_recv_handler_one(): fd:18, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"67834bcd-247b-4b81-acab-9ccea3552095",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:256 bytes
+[20181229 16:44:53] [DEBUG] Got _internal.info.
+[20181229 16:44:53] [INFO] cmd_internal_get_info_callback
+[20181229 16:44:53] [INFO] fw_ver=1.42.6
+[20181229 16:44:53] [DEBUG] ip=192.168.0.100
+[20181229 16:44:53] [INFO] report_otcinfo_flag: 0
+[20181229 16:44:53] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"67834bcd-247b-4b81-acab-9ccea3552095","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":725},"id":1107393334,"method":"_otc.info"}
+[20181229 16:44:53] [INFO] OT agent listen accept sockfd: 19
+[20181229 16:44:53] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20181229 16:44:53] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20181229 16:44:53] [DEBUG] Got _internal.hello.
+[20181229 16:44:53] [INFO] STATE: (7)
+[20181229 16:44:53] [DEBUG] cloud msg:{"id":1107393334,"result":{"otc_list":[{"ip":"120.92.67.4","port":8053},{"ip":"120.92.67.2","port":8053},{"ip":"120.131.7.180","port":8053},{"ip":"124.251.57.7","port":8053}],"otc_test":{"list":[{"ip":"124.251.57.3","port":8053},{"ip":"120.131.9.183","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"27.109.124.37","port":8053},{"ip":"220.181.138.1","port":8053}],"interval":1800, "firsttest":635}}}, len :407
+[20181229 16:44:53] [INFO] S, id:1107393334, len:407
+[20181229 16:44:53] [INFO] _otc.info reported (flag: 1107393334) and got response.
+[20181229 16:44:53] [DEBUG] _otc.info response: {"id":1107393334,"result":{"otc_list":[{"ip":"120.92.67.4","port":8053},{"ip":"120.92.67.2","port":8053},{"ip":"120.131.7.180","port":8053},{"ip":"124.251.57.7","port":8053}],"otc_test":{"list":[{"ip":"124.251.57.3","port":8053},{"ip":"120.131.9.183","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"27.109.124.37","port":8053},{"ip":"220.181.138.1","port":8053}],"interval":1800, "firsttest":635}}}
+[20181229 16:44:53] [DEBUG] data desc acked(-) id: 1107393334
+[20181229 16:44:53] [DEBUG] Add server into list, host ip: 120.92.67.4, port: 8053
+[20181229 16:44:53] [DEBUG] Add server into list, host ip: 120.92.67.2, port: 8053
+[20181229 16:44:53] [DEBUG] Add server into list, host ip: 120.131.7.180, port: 8053
+[20181229 16:44:53] [DEBUG] Add server into list, host ip: 124.251.57.7, port: 8053
+[20181229 16:44:53] [INFO] STATE: (7) -> STATE_CLOUD_CONNECTED
+[20181229 16:44:53] [DEBUG] method_local_broadcast_msg()
+[20181229 16:44:53] [DEBUG] Set _otc.info sync_interval: 1800000
+[20181229 16:44:53] [DEBUG] Start keep alive interval: 20000
+[20181229 16:44:53] [INFO] report_ota_state_idle
+[20181229 16:44:53] [DEBUG] cloud msg:{"id":438625575,"result":"ok"}, len :31
+[20181229 16:44:53] [INFO] S, id:438625575, len:31
+[20181229 16:44:53] [INFO] report_ota_state_idle_callback: {"id":438625575,"result":"ok"}
+[20181229 16:44:53] [DEBUG] data desc acked(-) id: 438625575
+[20181229 16:44:53] [DEBUG] ot_agent_recv_handler_one(): fd:17, msg:{"id":0,"result":["ok"]} length:24 bytes
+[20181229 16:44:53] [INFO] ACK, id:0, fd:17, to:cloud
+[20190426 07:24:35] [INFO] report_synctime
+[20190426 07:24:35] [DEBUG] Time sync msg from server
+[20190426 07:24:35] [INFO] sync time with server, server: 1556234675, local(mono): 2524, diff: 1556232151
+[20190426 07:24:35] [WARNING] OT agent internalfd closed: 19
+[20190426 07:24:38] [INFO] OT agent listen accept sockfd: 19
+[20190426 07:24:38] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"bb97f7e6-f9a7-410c-af08-49093cd7247d","partner_token":"eyJkZXZpY2VJRCI6ImJiOTdmN2U2LWY5YTctNDEwYy1hZjA4LTQ5MDkzY2Q3MjQ3ZCIsImhtYWMiOiJGMmQyMjZha1lhXC9RQjAzMEcrUFVPOFB2TVVNPSJ9",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:395 bytes
+[20190426 07:24:38] [DEBUG] Got _internal.info.
+[20190426 07:24:38] [INFO] cmd_internal_get_info_callback
+[20190426 07:24:38] [INFO] fw_ver=1.42.6
+[20190426 07:24:38] [DEBUG] ip=192.168.0.100
+[20190426 07:24:38] [INFO] report_otcinfo_flag: 0
+[20190426 07:24:38] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"bb97f7e6-f9a7-410c-af08-49093cd7247d","partner_token":"eyJkZXZpY2VJRCI6ImJiOTdmN2U2LWY5YTctNDEwYy1hZjA4LTQ5MDkzY2Q3MjQ3ZCIsImhtYWMiOiJGMmQyMjZha1lhXC9RQjAzMEcrUFVPOFB2TVVNPSJ9","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":2527},"id":1230484282,"method":"_otc.info"}
+[20190426 07:24:38] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20190426 07:24:38] [INFO] OT agent listen accept sockfd: 23
+[20190426 07:24:38] [DEBUG] ot_agent_recv_handler_one(): fd:23, msg:{"method":"_internal.hello"} length:28 bytes
+[20190426 07:24:38] [DEBUG] Got _internal.hello.
+[20190426 07:24:38] [INFO] STATE: (8)
+[20190426 07:24:38] [DEBUG] cloud msg:{"id":1230484282,"result":{"otc_list":[{"ip":"124.251.57.3","port":8053},{"ip":"120.92.67.3","port":8053},{"ip":"120.92.208.58","port":8053},{"ip":"120.92.65.237","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.131.15.130","port":8053},{"ip":"111.206.174.5","port":8053},{"ip":"120.92.142.94","port":8053},{"ip":"220.181.138.2","port":8053}],"interval":1800, "firsttest":402}}}, len :397
+[20190426 07:24:38] [INFO] S, id:1230484282, len:397
+[20190426 07:24:38] [INFO] _otc.info reported (flag: 1230484282) and got response.
+[20190426 07:24:38] [DEBUG] _otc.info response: {"id":1230484282,"result":{"otc_list":[{"ip":"124.251.57.3","port":8053},{"ip":"120.92.67.3","port":8053},{"ip":"120.92.208.58","port":8053},{"ip":"120.92.65.237","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.131.15.130","port":8053},{"ip":"111.206.174.5","port":8053},{"ip":"120.92.142.94","port":8053},{"ip":"220.181.138.2","port":8053}],"interval":1800, "firsttest":402}}}
+[20190426 07:24:38] [DEBUG] data desc acked(-) id: 1230484282
+[20190426 07:24:38] [DEBUG] Add server into list, host ip: 124.251.57.3, port: 8053
+[20190426 07:24:38] [DEBUG] Add server into list, host ip: 120.92.67.3, port: 8053
+[20190426 07:24:38] [DEBUG] Add server into list, host ip: 120.92.208.58, port: 8053
+[20190426 07:24:38] [DEBUG] Add server into list, host ip: 120.92.65.237, port: 8053
+[20190426 07:54:35] [INFO] report_synctime
+[20190426 07:54:35] [DEBUG] Time sync msg from server
+[20190426 07:54:35] [INFO] sync time with server, server: 1556236475, local(mono): 4324, diff: 1556232151
+[20190426 07:54:35] [WARNING] OT agent internalfd closed: 23
+[20190426 07:54:36] [INFO] OT agent listen accept sockfd: 19
+[20190426 07:54:36] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"1c164a7a-a1cd-4f10-92e5-7128a184499f","partner_token":"eyJkZXZpY2VJRCI6IjFjMTY0YTdhLWExY2QtNGYxMC05MmU1LTcxMjhhMTg0NDk5ZiIsImhtYWMiOiJyNHN3Mnp5YStORkt5QjkrcTJJUVVZeFNsRHM9In0=",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:395 bytes
+[20190426 07:54:36] [DEBUG] Got _internal.info.
+[20190426 07:54:36] [INFO] cmd_internal_get_info_callback
+[20190426 07:54:36] [INFO] fw_ver=1.42.6
+[20190426 07:54:36] [DEBUG] ip=192.168.0.100
+[20190426 07:54:36] [INFO] report_otcinfo_flag: 0
+[20190426 07:54:36] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"1c164a7a-a1cd-4f10-92e5-7128a184499f","partner_token":"eyJkZXZpY2VJRCI6IjFjMTY0YTdhLWExY2QtNGYxMC05MmU1LTcxMjhhMTg0NDk5ZiIsImhtYWMiOiJyNHN3Mnp5YStORkt5QjkrcTJJUVVZeFNsRHM9In0=","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":4326},"id":1527669344,"method":"_otc.info"}
+[20190426 07:54:36] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20190426 07:54:36] [INFO] OT agent listen accept sockfd: 19
+[20190426 07:54:36] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20190426 07:54:36] [DEBUG] Got _internal.hello.
+[20190426 07:54:36] [INFO] STATE: (8)
+[20190426 07:54:36] [DEBUG] cloud msg:{"id":1527669344,"result":{"otc_list":[{"ip":"183.84.6.238","port":8053},{"ip":"124.251.57.6","port":8053},{"ip":"120.92.44.144","port":8053},{"ip":"120.92.67.33","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.212.107","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"120.92.138.214","port":8053},{"ip":"220.181.138.34","port":8053}],"interval":1800, "firsttest":277}}}, len :400
+[20190426 07:54:36] [INFO] S, id:1527669344, len:400
+[20190426 07:54:36] [INFO] _otc.info reported (flag: 1527669344) and got response.
+[20190426 07:54:36] [DEBUG] _otc.info response: {"id":1527669344,"result":{"otc_list":[{"ip":"183.84.6.238","port":8053},{"ip":"124.251.57.6","port":8053},{"ip":"120.92.44.144","port":8053},{"ip":"120.92.67.33","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.212.107","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"120.92.138.214","port":8053},{"ip":"220.181.138.34","port":8053}],"interval":1800, "firsttest":277}}}
+[20190426 07:54:36] [DEBUG] data desc acked(-) id: 1527669344
+[20190426 07:54:36] [DEBUG] Add server into list, host ip: 183.84.6.238, port: 8053
+[20190426 07:54:36] [DEBUG] Add server into list, host ip: 124.251.57.6, port: 8053
+[20190426 07:54:36] [DEBUG] Add server into list, host ip: 120.92.44.144, port: 8053
+[20190426 07:54:36] [DEBUG] Add server into list, host ip: 120.92.67.33, port: 8053
+[20190426 07:58:55] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:01:15] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:01:55] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:02:15] [DEBUG] report_keepalive,660: server_noack: 2
+[20190426 08:02:35] [DEBUG] report_keepalive,660: server_noack: 3
+[20190426 08:02:35] [DEBUG] report_keepalive,663: otc_close_and_retry
+[20190426 08:02:35] [DEBUG] OT server: 120.92.67.33, port: 8053 not response, close (socket 20)
+[20190426 08:02:36] [WARNING] We're offline now, can't report msg, id: 0
+[20190426 08:02:56] [DEBUG] method_local_broadcast_msg()
+[20190426 08:02:56] [DEBUG] server_conn_retry, dump server list udp_init.
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.243, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.242, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.241, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.239, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.238, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.237, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.67.34, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.212.107, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 124.251.57.6, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 124.251.57.4, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 124.251.57.3, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.65.244, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.65.243, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.65.242, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.67.33, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.65.237, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.65.254, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 124.251.57.7, port: 8053
+[20190426 08:02:56] [DEBUG] server_conn_retry, dump server list tcp_init.
+[20190426 08:02:56] [DEBUG] TCP server, ip: 183.84.5.203, port: 80
+[20190426 08:02:56] [DEBUG] server_conn_retry, dump server list udp.
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.67.33, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 120.92.44.144, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 124.251.57.6, port: 8053
+[20190426 08:02:56] [DEBUG] UDP server, ip: 183.84.6.238, port: 8053
+[20190426 08:02:56] [DEBUG] server_conn_retry, dump server list tcp.
+[20190426 08:02:56] [DEBUG] TCP server, ip: 183.84.5.203, port: 80
+[20190426 08:02:56] [INFO] Retry (1/-1), host ip: 120.92.67.33, port: 8053
+[20190426 08:02:56] [INFO] OT client fd: 18
+[20190426 08:02:56] [INFO] report_synctime
+[20190426 08:02:56] [DEBUG] ot_agent_recv_handler_one(): fd:17, msg:{"id":0,"result":["ok"]} length:24 bytes
+[20190426 08:02:56] [INFO] ACK, id:0, fd:17, to:cloud
+[20190426 08:02:56] [DEBUG] Time sync msg from server
+[20190426 08:02:56] [INFO] sync time with server, server: 1556236976, local(mono): 4824, diff: 1556232152
+[20190426 08:02:56] [WARNING] OT agent internalfd closed: 19
+[20190426 08:02:57] [INFO] OT agent listen accept sockfd: 19
+[20190426 08:02:57] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"63ac6774-0c90-412a-9388-18ea190d073a","partner_token":"eyJkZXZpY2VJRCI6IjYzYWM2Nzc0LTBjOTAtNDEyYS05Mzg4LTE4ZWExOTBkMDczYSIsImhtYWMiOiJVbkZqU3h2UWxEc0lTVFZBTGRPSWN2UEJ2Qnc9In0=",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:395 bytes
+[20190426 08:02:57] [DEBUG] Got _internal.info.
+[20190426 08:02:57] [INFO] cmd_internal_get_info_callback
+[20190426 08:02:57] [INFO] fw_ver=1.42.6
+[20190426 08:02:57] [DEBUG] ip=192.168.0.100
+[20190426 08:02:57] [INFO] report_otcinfo_flag: 0
+[20190426 08:02:57] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"63ac6774-0c90-412a-9388-18ea190d073a","partner_token":"eyJkZXZpY2VJRCI6IjYzYWM2Nzc0LTBjOTAtNDEyYS05Mzg4LTE4ZWExOTBkMDczYSIsImhtYWMiOiJVbkZqU3h2UWxEc0lTVFZBTGRPSWN2UEJ2Qnc9In0=","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":4827},"id":487918699,"method":"_otc.info"}
+[20190426 08:02:57] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20190426 08:02:57] [INFO] OT agent listen accept sockfd: 19
+[20190426 08:02:57] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20190426 08:02:57] [DEBUG] Got _internal.hello.
+[20190426 08:02:57] [INFO] STATE: (7)
+[20190426 08:02:57] [DEBUG] cloud msg:{"id":487918699,"result":{"otc_list":[{"ip":"120.92.67.33","port":8053},{"ip":"120.92.44.144","port":8053},{"ip":"120.92.67.6","port":8053},{"ip":"124.251.57.5","port":8053}],"otc_test":{"list":[{"ip":"124.251.57.4","port":8053},{"ip":"120.131.11.49","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"120.92.138.214","port":8053},{"ip":"220.181.138.35","port":8053}],"interval":1800, "firsttest":187}}}, len :409
+[20190426 08:02:57] [INFO] S, id:487918699, len:409
+[20190426 08:02:57] [INFO] _otc.info reported (flag: 487918699) and got response.
+[20190426 08:02:57] [DEBUG] _otc.info response: {"id":487918699,"result":{"otc_list":[{"ip":"120.92.67.33","port":8053},{"ip":"120.92.44.144","port":8053},{"ip":"120.92.67.6","port":8053},{"ip":"124.251.57.5","port":8053}],"otc_test":{"list":[{"ip":"124.251.57.4","port":8053},{"ip":"120.131.11.49","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"120.92.138.214","port":8053},{"ip":"220.181.138.35","port":8053}],"interval":1800, "firsttest":187}}}
+[20190426 08:02:57] [DEBUG] data desc acked(-) id: 487918699
+[20190426 08:02:57] [DEBUG] Add server into list, host ip: 120.92.67.33, port: 8053
+[20190426 08:02:57] [DEBUG] Add server into list, host ip: 120.92.44.144, port: 8053
+[20190426 08:02:57] [DEBUG] Add server into list, host ip: 120.92.67.6, port: 8053
+[20190426 08:02:57] [DEBUG] Add server into list, host ip: 124.251.57.5, port: 8053
+[20190426 08:02:57] [INFO] STATE: (7) -> STATE_CLOUD_CONNECTED
+[20190426 08:02:57] [DEBUG] method_local_broadcast_msg()
+[20190426 08:02:57] [DEBUG] Set _otc.info sync_interval: 1800000
+[20190426 08:02:57] [DEBUG] Start keep alive interval: 20000
+[20190426 08:02:58] [DEBUG] ot_agent_recv_handler_one(): fd:17, msg:{"id":0,"result":["ok"]} length:24 bytes
+[20190426 08:02:58] [INFO] ACK, id:0, fd:17, to:cloud
+[20190426 08:05:17] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:05:37] [DEBUG] report_keepalive,660: server_noack: 2
+[20190426 08:06:17] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:06:37] [DEBUG] report_keepalive,660: server_noack: 2
+[20190426 08:08:17] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:09:57] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:10:37] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:11:37] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:11:57] [DEBUG] report_keepalive,660: server_noack: 2
+[20190426 08:13:17] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:16:57] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 08:32:57] [INFO] report_synctime
+[20190426 08:32:57] [DEBUG] Time sync msg from server
+[20190426 08:32:57] [INFO] sync time with server, server: 1556238777, local(mono): 6626, diff: 1556232151
+[20190426 08:32:57] [WARNING] OT agent internalfd closed: 19
+[20190426 08:32:59] [INFO] OT agent listen accept sockfd: 19
+[20190426 08:32:59] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"4fdb7e7f-d38b-4e60-97e1-2aced4a22097","partner_token":"eyJkZXZpY2VJRCI6IjRmZGI3ZTdmLWQzOGItNGU2MC05N2UxLTJhY2VkNGEyMjA5NyIsImhtYWMiOiJZZjh4RzMyMzFCU1RqMTVLTDFnbHhMSFVrNnc9In0=",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:395 bytes
+[20190426 08:32:59] [DEBUG] Got _internal.info.
+[20190426 08:32:59] [INFO] cmd_internal_get_info_callback
+[20190426 08:32:59] [INFO] fw_ver=1.42.6
+[20190426 08:32:59] [DEBUG] ip=192.168.0.100
+[20190426 08:32:59] [INFO] report_otcinfo_flag: 0
+[20190426 08:32:59] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"4fdb7e7f-d38b-4e60-97e1-2aced4a22097","partner_token":"eyJkZXZpY2VJRCI6IjRmZGI3ZTdmLWQzOGItNGU2MC05N2UxLTJhY2VkNGEyMjA5NyIsImhtYWMiOiJZZjh4RzMyMzFCU1RqMTVLTDFnbHhMSFVrNnc9In0=","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":6629},"id":517068136,"method":"_otc.info"}
+[20190426 08:32:59] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20190426 08:32:59] [INFO] OT agent listen accept sockfd: 19
+[20190426 08:32:59] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20190426 08:32:59] [DEBUG] Got _internal.hello.
+[20190426 08:32:59] [INFO] STATE: (8)
+[20190426 08:32:59] [DEBUG] cloud msg:{"id":517068136,"result":{"otc_list":[{"ip":"120.92.44.88","port":8053},{"ip":"183.84.6.237","port":8053},{"ip":"120.131.15.130","port":8053},{"ip":"124.251.57.7","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.131.15.130","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"120.92.138.214","port":8053},{"ip":"220.181.138.35","port":8053}],"interval":1800, "firsttest":57}}}, len :399
+[20190426 08:32:59] [INFO] S, id:517068136, len:399
+[20190426 08:32:59] [INFO] _otc.info reported (flag: 517068136) and got response.
+[20190426 08:32:59] [DEBUG] _otc.info response: {"id":517068136,"result":{"otc_list":[{"ip":"120.92.44.88","port":8053},{"ip":"183.84.6.237","port":8053},{"ip":"120.131.15.130","port":8053},{"ip":"124.251.57.7","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.131.15.130","port":8053},{"ip":"111.206.174.35","port":8053},{"ip":"120.92.138.214","port":8053},{"ip":"220.181.138.35","port":8053}],"interval":1800, "firsttest":57}}}
+[20190426 08:32:59] [DEBUG] data desc acked(-) id: 517068136
+[20190426 08:32:59] [DEBUG] Add server into list, host ip: 120.92.44.88, port: 8053
+[20190426 08:32:59] [DEBUG] Add server into list, host ip: 183.84.6.237, port: 8053
+[20190426 08:32:59] [DEBUG] Add server into list, host ip: 120.131.15.130, port: 8053
+[20190426 08:32:59] [DEBUG] Add server into list, host ip: 124.251.57.7, port: 8053
+[20190426 08:36:37] [DEBUG] report_keepalive,660: server_noack: 1
+[20190426 09:02:57] [INFO] report_synctime
+[20190426 09:02:57] [DEBUG] Time sync msg from server
+[20190426 09:02:57] [INFO] sync time with server, server: 1556240577, local(mono): 8426, diff: 1556232151
+[20190426 09:02:57] [WARNING] OT agent internalfd closed: 19
+[20190426 09:02:59] [INFO] OT agent listen accept sockfd: 19
+[20190426 09:02:59] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"16e1427d-ed2a-48c0-9e2e-96364a55ef46","partner_token":"eyJkZXZpY2VJRCI6IjE2ZTE0MjdkLWVkMmEtNDhjMC05ZTJlLTk2MzY0YTU1ZWY0NiIsImhtYWMiOiJNUm80bEZcL1Z5bURlXC9ETzZcL3NiZER1cTZiK3M9In0=",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:399 bytes
+[20190426 09:02:59] [DEBUG] Got _internal.info.
+[20190426 09:02:59] [INFO] cmd_internal_get_info_callback
+[20190426 09:02:59] [INFO] fw_ver=1.42.6
+[20190426 09:02:59] [DEBUG] ip=192.168.0.100
+[20190426 09:02:59] [INFO] report_otcinfo_flag: 0
+[20190426 09:02:59] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"16e1427d-ed2a-48c0-9e2e-96364a55ef46","partner_token":"eyJkZXZpY2VJRCI6IjE2ZTE0MjdkLWVkMmEtNDhjMC05ZTJlLTk2MzY0YTU1ZWY0NiIsImhtYWMiOiJNUm80bEZcL1Z5bURlXC9ETzZcL3NiZER1cTZiK3M9In0=","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":8429},"id":1624086549,"method":"_otc.info"}
+[20190426 09:02:59] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20190426 09:02:59] [INFO] OT agent listen accept sockfd: 19
+[20190426 09:02:59] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20190426 09:02:59] [DEBUG] Got _internal.hello.
+[20190426 09:02:59] [INFO] STATE: (8)
+[20190426 09:02:59] [DEBUG] cloud msg:{"id":1624086549,"result":{"otc_list":[{"ip":"120.92.208.26","port":8053},{"ip":"120.92.67.3","port":8053},{"ip":"183.84.6.242","port":8053},{"ip":"120.92.65.254","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.208.26","port":8053},{"ip":"111.206.174.36","port":8053},{"ip":"45.124.124.107","port":8053},{"ip":"220.181.138.35","port":8053}],"interval":1800, "firsttest":1009}}}, len :400
+[20190426 09:02:59] [INFO] S, id:1624086549, len:400
+[20190426 09:02:59] [INFO] _otc.info reported (flag: 1624086549) and got response.
+[20190426 09:02:59] [DEBUG] _otc.info response: {"id":1624086549,"result":{"otc_list":[{"ip":"120.92.208.26","port":8053},{"ip":"120.92.67.3","port":8053},{"ip":"183.84.6.242","port":8053},{"ip":"120.92.65.254","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.92.208.26","port":8053},{"ip":"111.206.174.36","port":8053},{"ip":"45.124.124.107","port":8053},{"ip":"220.181.138.35","port":8053}],"interval":1800, "firsttest":1009}}}
+[20190426 09:02:59] [DEBUG] data desc acked(-) id: 1624086549
+[20190426 09:02:59] [DEBUG] Add server into list, host ip: 120.92.208.26, port: 8053
+[20190426 09:02:59] [DEBUG] Add server into list, host ip: 120.92.67.3, port: 8053
+[20190426 09:02:59] [DEBUG] Add server into list, host ip: 183.84.6.242, port: 8053
+[20190426 09:02:59] [DEBUG] Add server into list, host ip: 120.92.65.254, port: 8053
+[20190426 09:32:57] [INFO] report_synctime
+[20190426 09:32:57] [DEBUG] Time sync msg from server
+[20190426 09:32:57] [INFO] sync time with server, server: 1556242377, local(mono): 10226, diff: 1556232151
+[20190426 09:32:57] [WARNING] OT agent internalfd closed: 19
+[20190426 09:32:59] [INFO] OT agent listen accept sockfd: 19
+[20190426 09:32:59] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.info","params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"81124aca-a3ba-46c6-87e9-9bb2736595d6","partner_token":"eyJkZXZpY2VJRCI6IjgxMTI0YWNhLWEzYmEtNDZjNi04N2U5LTliYjI3MzY1OTVkNiIsImhtYWMiOiI3WENLbUlDK0VuQ3M1UTNhNFZQTWxZZ1ltRXM9In0=",
+"ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{ "localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"}}} length:395 bytes
+[20190426 09:32:59] [DEBUG] Got _internal.info.
+[20190426 09:32:59] [INFO] cmd_internal_get_info_callback
+[20190426 09:32:59] [INFO] fw_ver=1.42.6
+[20190426 09:32:59] [DEBUG] ip=192.168.0.100
+[20190426 09:32:59] [INFO] report_otcinfo_flag: 0
+[20190426 09:32:59] [DEBUG] report to cloud _otc.info: {"params":{"hw_ver":"Linux","fw_ver":"1.42.6","partner_id":"81124aca-a3ba-46c6-87e9-9bb2736595d6","partner_token":"eyJkZXZpY2VJRCI6IjgxMTI0YWNhLWEzYmEtNDZjNi04N2U5LTliYjI3MzY1OTVkNiIsImhtYWMiOiI3WENLbUlDK0VuQ3M1UTNhNFZQTWxZZ1ltRXM9In0=","ap":{"ssid":"38-101","bssid":"6C:59:40:C6:40:F4"},"netif":{"localIp":"192.168.0.100","mask":"255.255.255.0","gw":"192.168.0.1"},"model":"xiaomi.wifispeaker.s12","mac":"3C:BD:3E:63:AE:47","token":"526352654e3248667330426b71497647","life":10229},"id":1209406977,"method":"_otc.info"}
+[20190426 09:32:59] [DEBUG] ACK timer fd: 15, timeout: 3000 ms
+[20190426 09:32:59] [INFO] OT agent listen accept sockfd: 19
+[20190426 09:32:59] [DEBUG] ot_agent_recv_handler_one(): fd:19, msg:{"method":"_internal.hello"} length:28 bytes
+[20190426 09:32:59] [DEBUG] Got _internal.hello.
+[20190426 09:32:59] [INFO] STATE: (8)
+[20190426 09:32:59] [DEBUG] cloud msg:{"id":1209406977,"result":{"otc_list":[{"ip":"183.84.6.237","port":8053},{"ip":"120.92.67.5","port":8053},{"ip":"120.92.44.88","port":8053},{"ip":"120.92.44.144","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.131.9.183","port":8053},{"ip":"111.206.174.4","port":8053},{"ip":"27.109.124.92","port":8053},{"ip":"220.181.138.2","port":8053}],"interval":1800, "firsttest":1420}}}, len :396
+[20190426 09:32:59] [INFO] S, id:1209406977, len:396
+[20190426 09:32:59] [INFO] _otc.info reported (flag: 1209406977) and got response.
+[20190426 09:32:59] [DEBUG] _otc.info response: {"id":1209406977,"result":{"otc_list":[{"ip":"183.84.6.237","port":8053},{"ip":"120.92.67.5","port":8053},{"ip":"120.92.44.88","port":8053},{"ip":"120.92.44.144","port":8053}],"otc_test":{"list":[{"ip":"","port":8053},{"ip":"120.131.9.183","port":8053},{"ip":"111.206.174.4","port":8053},{"ip":"27.109.124.92","port":8053},{"ip":"220.181.138.2","port":8053}],"interval":1800, "firsttest":1420}}}
+[20190426 09:32:59] [DEBUG] data desc acked(-) id: 1209406977
+[20190426 09:32:59] [DEBUG] Add server into list, host ip: 183.84.6.237, port: 8053
+[20190426 09:32:59] [DEBUG] Add server into list, host ip: 120.92.67.5, port: 8053
+[20190426 09:32:59] [DEBUG] Add server into list, host ip: 120.92.44.88, port: 8053
+[20190426 09:32:59] [DEBUG] Add server into list, host ip: 120.92.44.144, port: 8053
+[20190426 09:41:17] [DEBUG] report_keepalive,660: server_noack: 1

@@ -1,0 +1,11 @@
+Package: libdbi
+Version: 0.9.0-4
+Depends: libc, librt, libpthread
+Source: feeds/packages/libs/libdbi
+License: LGPL-2.1
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Architecture: meson
+Installed-Size: 17073
+Description:  This package provides a database-independent abstraction layer library in C.

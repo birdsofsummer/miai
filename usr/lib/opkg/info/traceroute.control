@@ -1,0 +1,9 @@
+Package: traceroute
+Version: 2.1.0-1
+Depends: libc, librt, libpthread
+Source: package/libs/traceroute
+Section: utils
+Maintainer: Dmitry Butskoy <Dmitry at Butskoy dot name>
+Architecture: meson
+Installed-Size: 25194
+Description:  traceroute (This is a new modern implementation of the traceroute(8))

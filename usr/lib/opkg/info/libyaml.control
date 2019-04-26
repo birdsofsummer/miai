@@ -1,0 +1,11 @@
+Package: libyaml
+Version: 0.1.6-1
+Depends: libc, librt, libpthread
+Source: feeds/packages/libs/yaml
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Architecture: arm64
+Installed-Size: 37165
+Description:  Fast YAML 1.1 parser and emitter library

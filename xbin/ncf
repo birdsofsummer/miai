@@ -1,0 +1,4 @@
+ports
+echo "nc -lp 12345|tar xvf -"
+ifconfig |grep "inet addr:" |tail -1|cut -d: -f2|awk '{print "tar cvf - * |nc " $1 " 12345"}'
+nc -lp 12345|tar xvf -

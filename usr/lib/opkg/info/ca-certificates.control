@@ -1,0 +1,8 @@
+Package: ca-certificates
+Version: 20150426
+Depends: libc, librt, libpthread
+Source: package/system/ca-certificates
+Section: base
+Architecture: arm64
+Installed-Size: 185315
+Description:  System CA certificates

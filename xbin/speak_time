@@ -1,0 +1,3 @@
+tts=`date '+%H:%M'`
+ubus call mibrain text_to_speech "{\"text\":\"$tts\",\"save\":0}"
+

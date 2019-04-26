@@ -1,0 +1,9 @@
+Package: i2c-tools
+Version: 2013-12-15-1
+Depends: libc, librt, libpthread, libi2c
+Source: package/utils/i2c-tools
+Section: utils
+Architecture: meson
+Installed-Size: 18553
+Description:  This package contains an heterogeneous set of I2C tools for Linux. These tools
+ were originally part of the lm-sensors package.

@@ -1,0 +1,13 @@
+<eps> 0
+SIL 1
+aa 2
+ai 3
+filler 4
+iao 5
+ong 6
+t 7
+ue 8
+x 9
+#0 10
+#1 11
+#2 12

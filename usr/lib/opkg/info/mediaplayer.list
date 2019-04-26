@@ -1,0 +1,8 @@
+/usr/lib/libxiaomimediaplayer.so
+/usr/lib/libffmpeg-miplayer.so
+/usr/bin/mphelper
+/usr/bin/urlcheck.sh
+/usr/bin/mediaplayer
+/usr/bin/miplayer
+/usr/bin/check_mediaplayer_status
+/etc/init.d/mediaplayer

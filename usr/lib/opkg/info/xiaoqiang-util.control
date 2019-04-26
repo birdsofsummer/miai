@@ -1,0 +1,8 @@
+Package: xiaoqiang-util
+Version: 1-1.1
+Depends: libc, librt, libpthread, libopenssl
+Source: package/utils/xiaoqiang-util
+Section: net
+Architecture: meson
+Installed-Size: 8605
+Description:  XiaoQiang Utilities

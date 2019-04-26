@@ -1,0 +1,8 @@
+Package: minet_miot_client
+Version: 1.0.0
+Depends: libc, librt, libpthread, libjson-c
+Source: /home/jenkins/mico/mi/minet_miot_client
+Section: xiaomi
+Architecture: meson
+Installed-Size: 46379
+Description:  MiNet MIOT client

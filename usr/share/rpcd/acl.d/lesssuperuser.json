@@ -1,0 +1,19 @@
+{
+        "lesssuperuser": {
+                "description": "not quite as super user",
+                "read": {
+                        "ubus": {
+                                "file": [ "*" ],
+                                "log": [ "*" ],
+                                "service": [ "*" ],
+                        },
+                },
+                "write": {
+                        "ubus": {
+                                "file": [ "*" ],
+                                "log": [ "*" ],
+                                "service": [ "*" ],
+                        },
+                }
+        }
+}

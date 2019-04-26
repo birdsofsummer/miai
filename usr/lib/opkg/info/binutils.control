@@ -1,0 +1,10 @@
+Package: binutils
+Version: 2.24-3
+Depends: libc, librt, libpthread, objdump, ar
+Source: package/devel/binutils
+License: GPL-3.0+
+Section: devel
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: meson
+Installed-Size: 883632
+Description:  The Binutils package contains a linker, an assembler, and other tools for handling object files

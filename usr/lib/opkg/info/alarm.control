@@ -1,0 +1,8 @@
+Package: alarm
+Version: 0.0.1
+Depends: libc, librt, libpthread, libjson-c, libubus, libblobmsg-json, libubox, libuci, libuuid
+Source: /home/jenkins/mico/mi/alarm
+Section: xiaomi
+Architecture: meson
+Installed-Size: 25449
+Description:  alarmd timer

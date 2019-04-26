@@ -1,0 +1,22 @@
+Package: ruby-math
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-patterns
+Source: /home/jow/relman-cc/.cache/feeds/packages/lang/ruby
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: lang
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm64
+Installed-Size: 28986
+Description:  Provides math related files:
+ - cmath.rb
+ - complex.rb
+ - mathn.rb
+ - mathn/complex.so
+ - mathn/rational.so
+ - matrix.rb
+ - matrix/eigenvalue_decomposition.rb
+ - matrix/lup_decomposition.rb
+ - prime.rb
+ - rational.rb
+ 

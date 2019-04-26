@@ -1,0 +1,8 @@
+Package: vad-sdk
+Version: 1
+Depends: libc, librt, libpthread
+Source: /home/jenkins/mico/mi/vad-sdk
+Section: xiaomi
+Architecture: meson
+Installed-Size: 91664
+Description:  This local vad engine;

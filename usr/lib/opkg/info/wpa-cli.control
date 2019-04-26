@@ -1,0 +1,8 @@
+Package: wpa-cli
+Version: 2017-08-24-3
+Depends: libc, librt, libpthread
+Source: /home/jenkins/mico/mi/hostapd
+Section: net
+Architecture: meson
+Installed-Size: 33633
+Description:  WPA Supplicant command line control utility

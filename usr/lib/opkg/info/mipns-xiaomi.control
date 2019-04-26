@@ -1,0 +1,8 @@
+Package: mipns-xiaomi
+Version: 1
+Depends: libc, librt, libpthread, mipns-general, mibrain-common-sdk, glib2, alsa-lib, libubox, libubus, libjson-c
+Source: /home/jenkins/mico/mi/pns-xiaomi
+Section: xiaomi
+Architecture: meson
+Installed-Size: 10715833
+Description:  Like PNS(peripheral nervous system) on animal, mipns connect mibarin with its body (frondend XiaoMi).

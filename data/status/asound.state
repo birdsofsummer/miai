@@ -1,0 +1,179 @@
+state.AMLM8AUDIO {
+	control.1 {
+		iface MIXER
+		name 'DAC Digital Playback Volume'
+		value.0 251
+		value.1 251
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 255'
+			dbmin -9999999
+			dbmax 375
+			dbvalue.0 -1125
+			dbvalue.1 -1125
+		}
+	}
+	control.2 {
+		iface MIXER
+		name 'DAC Extra Digital Gain'
+		value '0dB'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 '0dB'
+			item.1 '6dB'
+			item.2 '12dB'
+			item.3 '18dB'
+		}
+	}
+	control.3 {
+		iface MIXER
+		name 'Audio i2s mute'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.4 {
+		iface MIXER
+		name 'Output Swap'
+		value 64512
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 L/R
+			item.1 L/L
+			item.2 R/R
+			item.3 R/L
+		}
+	}
+	control.5 {
+		iface MIXER
+		name 'Audio spdif mute'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.6 {
+		iface MIXER
+		name 'Ext Spk Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.7 {
+		iface MIXER
+		name 'Lineout right N switch'
+		value LORN_SEL_DACR_INV
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 LORN_SEL_DACR_INV
+			item.2 LORN_SEL_DACR
+		}
+	}
+	control.8 {
+		iface MIXER
+		name 'Lineout right P switch'
+		value LORP_SEL_DACR
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 LORP_SEL_DACR
+			item.2 LORP_SEL_DACR_INV
+		}
+	}
+	control.9 {
+		iface MIXER
+		name 'Lineout left N switch'
+		value LOLN_SEL_DACL_INV
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 LOLN_SEL_DACL_INV
+			item.2 LOLN_SEL_DACL
+		}
+	}
+	control.10 {
+		iface MIXER
+		name 'Lineout left P switch'
+		value LOLP_SEL_DACL
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 LOLP_SEL_DACL
+			item.2 LOLP_SEL_DACL_INV
+		}
+	}
+	control.11 {
+		iface MIXER
+		name mysoftvol
+		value.0 160
+		value.1 160
+		comment {
+			access 'read write user'
+			type INTEGER
+			count 2
+			range '0 - 255'
+			tlv '00000001000000080000000000000027'
+			dbmin 0
+			dbmax 9945
+			dbvalue.0 6240
+			dbvalue.1 6240
+		}
+	}
+	control.12 {
+		iface MIXER
+		name notifyvol
+		value.0 160
+		value.1 160
+		comment {
+			access 'read write user'
+			type INTEGER
+			count 2
+			range '0 - 255'
+			tlv '00000001000000080000000000000027'
+			dbmin 0
+			dbmax 9945
+			dbvalue.0 6240
+			dbvalue.1 6240
+		}
+	}
+	control.13 {
+		iface MIXER
+		name bluetooth
+		value.0 215
+		value.1 215
+		comment {
+			access 'read write user'
+			type INTEGER
+			count 2
+			range '0 - 255'
+			tlv '00000001000000080000000000000027'
+			dbmin 0
+			dbmax 9945
+			dbvalue.0 8385
+			dbvalue.1 8385
+		}
+	}
+}

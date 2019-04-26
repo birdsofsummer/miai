@@ -1,0 +1,7 @@
+i2cset -y 2 0x6D 0x04 0xBE
+i2cset -y 2 0x6D 0x05 0xBE
+i2cset -y 2 0x6D 0x06 0xD1
+
+echo 163 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio163/direction
+echo 1 > /sys/class/gpio/gpio163/value

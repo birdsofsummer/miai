@@ -1,0 +1,92 @@
+00400000-00408000 r-xp 00000000 00:0e 390                                /usr/bin/mipns-sai
+00417000-00418000 rwxp 00007000 00:0e 390                                /usr/bin/mipns-sai
+3330c000-33399000 rwxp 00000000 00:00 0                                  [heap]
+7fb0f6e000-7fb103a000 r-xp 00000000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7fb103a000-7fb1049000 ---p 000cc000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7fb1049000-7fb1050000 r-xp 000cb000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7fb1050000-7fb1053000 rwxp 000d2000 00:0e 899                            /usr/lib/libstdc++.so.6.0.19
+7fb1053000-7fb1067000 rwxp 00000000 00:00 0 
+7fb1067000-7fb1158000 r-xp 00000000 00:0e 1022                           /usr/lib/libmibrainsdk.so
+7fb1158000-7fb1167000 ---p 000f1000 00:0e 1022                           /usr/lib/libmibrainsdk.so
+7fb1167000-7fb117f000 rwxp 000f0000 00:0e 1022                           /usr/lib/libmibrainsdk.so
+7fb117f000-7fb1182000 rwxp 00000000 00:00 0 
+7fb1182000-7fb1184000 r-xp 00000000 00:0e 281                            /lib/libblobmsg_json.so
+7fb1184000-7fb1193000 ---p 00002000 00:0e 281                            /lib/libblobmsg_json.so
+7fb1193000-7fb1194000 rwxp 00001000 00:0e 281                            /lib/libblobmsg_json.so
+7fb1194000-7fb1199000 r-xp 00000000 00:0e 1000                           /usr/lib/libprotobuf-c.so.1.0.0
+7fb1199000-7fb11a8000 ---p 00005000 00:0e 1000                           /usr/lib/libprotobuf-c.so.1.0.0
+7fb11a8000-7fb11a9000 rwxp 00004000 00:0e 1000                           /usr/lib/libprotobuf-c.so.1.0.0
+7fb11a9000-7fb11cc000 r-xp 00000000 00:0e 878                            /usr/lib/libFLAC.so.8.3.0
+7fb11cc000-7fb11dc000 ---p 00023000 00:0e 878                            /usr/lib/libFLAC.so.8.3.0
+7fb11dc000-7fb11dd000 rwxp 00023000 00:0e 878                            /usr/lib/libFLAC.so.8.3.0
+7fb11dd000-7fb1211000 r-xp 00000000 00:0e 1031                           /usr/lib/libopus.so.0.5.0
+7fb1211000-7fb1220000 ---p 00034000 00:0e 1031                           /usr/lib/libopus.so.0.5.0
+7fb1220000-7fb1221000 rwxp 00033000 00:0e 1031                           /usr/lib/libopus.so.0.5.0
+7fb1221000-7fb1227000 r-xp 00000000 00:0e 226                            /lib/librt-2.19.so
+7fb1227000-7fb1236000 ---p 00006000 00:0e 226                            /lib/librt-2.19.so
+7fb1236000-7fb1237000 r-xp 00005000 00:0e 226                            /lib/librt-2.19.so
+7fb1237000-7fb1238000 rwxp 00006000 00:0e 226                            /lib/librt-2.19.so
+7fb1238000-7fb14db000 r-xp 00000000 00:0e 1366                           /usr/lib/libDiracAPI_SHARED.so
+7fb14db000-7fb14eb000 ---p 002a3000 00:0e 1366                           /usr/lib/libDiracAPI_SHARED.so
+7fb14eb000-7fb1509000 r-xp 002a3000 00:0e 1366                           /usr/lib/libDiracAPI_SHARED.so
+7fb1509000-7fb150a000 rwxp 002c1000 00:0e 1366                           /usr/lib/libDiracAPI_SHARED.so
+7fb150a000-7fb1582000 rwxp 00000000 00:00 0 
+7fb1582000-7fb1609000 r-xp 00000000 00:0e 219                            /lib/libm-2.19.so
+7fb1609000-7fb1618000 ---p 00087000 00:0e 219                            /lib/libm-2.19.so
+7fb1618000-7fb1619000 r-xp 00086000 00:0e 219                            /lib/libm-2.19.so
+7fb1619000-7fb161a000 rwxp 00087000 00:0e 219                            /lib/libm-2.19.so
+7fb161a000-7fb1730000 r-xp 00000000 00:0e 229                            /lib/libc-2.19.so
+7fb1730000-7fb1740000 ---p 00116000 00:0e 229                            /lib/libc-2.19.so
+7fb1740000-7fb1744000 r-xp 00116000 00:0e 229                            /lib/libc-2.19.so
+7fb1744000-7fb1746000 rwxp 0011a000 00:0e 229                            /lib/libc-2.19.so
+7fb1746000-7fb174a000 rwxp 00000000 00:00 0 
+7fb174a000-7fb175a000 r-xp 00000000 00:0e 270                            /lib/libgcc_s.so.1
+7fb175a000-7fb1769000 ---p 00010000 00:0e 270                            /lib/libgcc_s.so.1
+7fb1769000-7fb176a000 rwxp 0000f000 00:0e 270                            /lib/libgcc_s.so.1
+7fb176a000-7fb17aa000 r-xp 00000000 00:0e 866                            /usr/lib/libmdspeech.so
+7fb17aa000-7fb17b9000 ---p 00040000 00:0e 866                            /usr/lib/libmdspeech.so
+7fb17b9000-7fb17ba000 rwxp 0003f000 00:0e 866                            /usr/lib/libmdspeech.so
+7fb17ba000-7fb17c5000 rwxp 00000000 00:00 0 
+7fb17c5000-7fb17c7000 r-xp 00000000 00:0e 232                            /lib/libdl-2.19.so
+7fb17c7000-7fb17d6000 ---p 00002000 00:0e 232                            /lib/libdl-2.19.so
+7fb17d6000-7fb17d7000 r-xp 00001000 00:0e 232                            /lib/libdl-2.19.so
+7fb17d7000-7fb17d8000 rwxp 00002000 00:0e 232                            /lib/libdl-2.19.so
+7fb17d8000-7fb17e0000 r-xp 00000000 00:0e 867                            /usr/lib/libjson-c.so.2.0.1
+7fb17e0000-7fb17ef000 ---p 00008000 00:0e 867                            /usr/lib/libjson-c.so.2.0.1
+7fb17ef000-7fb17f0000 rwxp 00007000 00:0e 867                            /usr/lib/libjson-c.so.2.0.1
+7fb17f0000-7fb17f4000 r-xp 00000000 00:0e 271                            /lib/libubus.so
+7fb17f4000-7fb1804000 ---p 00004000 00:0e 271                            /lib/libubus.so
+7fb1804000-7fb1805000 rwxp 00004000 00:0e 271                            /lib/libubus.so
+7fb1805000-7fb180e000 r-xp 00000000 00:0e 220                            /lib/libubox.so
+7fb180e000-7fb181d000 ---p 00009000 00:0e 220                            /lib/libubox.so
+7fb181d000-7fb181e000 rwxp 00008000 00:0e 220                            /lib/libubox.so
+7fb181e000-7fb1821000 r-xp 00000000 00:0e 901                            /usr/lib/libmibrain-common-util.so
+7fb1821000-7fb1830000 ---p 00003000 00:0e 901                            /usr/lib/libmibrain-common-util.so
+7fb1830000-7fb1831000 rwxp 00002000 00:0e 901                            /usr/lib/libmibrain-common-util.so
+7fb1831000-7fb1848000 r-xp 00000000 00:0e 890                            /usr/lib/libmibrain-common-sdk.so
+7fb1848000-7fb1857000 ---p 00017000 00:0e 890                            /usr/lib/libmibrain-common-sdk.so
+7fb1857000-7fb1858000 rwxp 00016000 00:0e 890                            /usr/lib/libmibrain-common-sdk.so
+7fb1858000-7fb185a000 rwxp 00000000 00:00 0 
+7fb185a000-7fb186b000 r-xp 00000000 00:0e 941                            /usr/lib/libz.so.1.2.8
+7fb186b000-7fb187a000 ---p 00011000 00:0e 941                            /usr/lib/libz.so.1.2.8
+7fb187a000-7fb187b000 rwxp 00010000 00:0e 941                            /usr/lib/libz.so.1.2.8
+7fb187b000-7fb1890000 r-xp 00000000 00:0e 222                            /lib/libpthread-2.19.so
+7fb1890000-7fb18a0000 ---p 00015000 00:0e 222                            /lib/libpthread-2.19.so
+7fb18a0000-7fb18a1000 r-xp 00015000 00:0e 222                            /lib/libpthread-2.19.so
+7fb18a1000-7fb18a2000 rwxp 00016000 00:0e 222                            /lib/libpthread-2.19.so
+7fb18a2000-7fb18a6000 rwxp 00000000 00:00 0 
+7fb18a6000-7fb194e000 r-xp 00000000 00:0e 879                            /usr/lib/libasound.so.2.0.0
+7fb194e000-7fb195d000 ---p 000a8000 00:0e 879                            /usr/lib/libasound.so.2.0.0
+7fb195d000-7fb1966000 rwxp 000a7000 00:0e 879                            /usr/lib/libasound.so.2.0.0
+7fb1966000-7fb1a9f000 rwxp 00000000 00:00 0 
+7fb1a9f000-7fb1dd0000 r-xp 00000000 00:0e 883                            /usr/lib/libsai_miAPIs.so
+7fb1dd0000-7fb1de0000 ---p 00331000 00:0e 883                            /usr/lib/libsai_miAPIs.so
+7fb1de0000-7fb1e09000 rwxp 00331000 00:0e 883                            /usr/lib/libsai_miAPIs.so
+7fb1e09000-7fb1e22000 rwxp 00000000 00:00 0 
+7fb1e22000-7fb1e3b000 r-xp 00000000 00:0e 208                            /lib/ld-2.19.so
+7fb1e3c000-7fb1e49000 rwxp 00000000 00:00 0 
+7fb1e49000-7fb1e4a000 r-xp 00000000 00:00 0                              [vdso]
+7fb1e4a000-7fb1e4b000 r--p 00000000 00:00 0                              [vvar]
+7fb1e4b000-7fb1e4c000 r-xp 00019000 00:0e 208                            /lib/ld-2.19.so
+7fb1e4c000-7fb1e4e000 rwxp 0001a000 00:0e 208                            /lib/ld-2.19.so
+7fdce9a000-7fdcebb000 rwxp 00000000 00:00 0                              [stack]

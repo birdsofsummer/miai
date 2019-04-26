@@ -1,0 +1,10 @@
+Package: procd-nand
+Version: 2015-10-29.1-d5fddd91b966424bb63e943e789704d52382cc18
+Depends: libc, librt, libpthread, ubi-utils
+Source: package/system/procd
+License: GPL-2.0
+Section: utils
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: meson
+Installed-Size: 243133
+Description:  OpenWrt sysupgrade nand helper

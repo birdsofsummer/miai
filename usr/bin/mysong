@@ -1,0 +1,5 @@
+a=`ubus -t 1 call mediaplayer player_get_context`
+json $a
+
+
+

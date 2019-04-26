@@ -1,0 +1,10 @@
+Package: libbfd
+Version: 2.24-3
+Depends: libc, librt, libpthread, zlib
+Source: package/devel/binutils
+License: GPL-3.0+
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: meson
+Installed-Size: 313488
+Description:  libbfd

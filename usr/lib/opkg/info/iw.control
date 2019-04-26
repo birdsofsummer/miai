@@ -1,0 +1,10 @@
+Package: iw
+Version: 4.3-1
+Depends: libc, librt, libpthread, libnl-tiny
+Source: package/network/utils/iw
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: meson
+Installed-Size: 36202
+Description:  cfg80211 interface configuration utility

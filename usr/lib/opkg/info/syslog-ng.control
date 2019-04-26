@@ -1,0 +1,10 @@
+Package: syslog-ng
+Version: 3.0.5-5
+Depends: libc, librt, libpthread, libpcre, glib2, libeventlog, libopenssl, libpthread, librt, zlib, libdbi, libintl-full
+Source: /home/jenkins/mico/mi/syslog-ng
+Section: mi
+Architecture: meson
+Installed-Size: 97638
+Description:  syslog-ng reads and logs messages to the system console, log
+ files, other machines and/or users as specified by its
+ configuration file.

@@ -1,0 +1,14 @@
+######!/sbin/zsh
+play_url(){
+	#m volume_set 180
+        url=$*
+	echo ${url}
+	ubus -t 1 call   mediaplayer player_play_url "{\"url\":\"${url}\",\"type\":1}"
+	#ubus -t 1 call   mediaplayer player_play_url "{\"url\":\"${url}\",\"type\":1,\"duration\":100}"
+	#m volume_set 100
+}
+loop(){
+	ubus -t 1 call   mediaplayer player_set_loop '{"type":1,"media":"mibrain"}'
+	ubus -t 1 call   mediaplayer player_set_loop '{"type":0,"media":"common"}'
+}
+play_url $*

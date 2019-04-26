@@ -1,0 +1,8 @@
+Package: libthrift
+Version: 0.11.0-1
+Depends: libc, librt, libpthread, glib2, libopenssl
+Source: /home/jenkins/mico/mi/thrift
+Section: opt
+Architecture: meson
+Installed-Size: 37480
+Description:  libthrift

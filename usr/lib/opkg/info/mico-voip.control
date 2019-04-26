@@ -1,0 +1,8 @@
+Package: mico-voip
+Version: 0.0.1
+Depends: libc, librt, libpthread, mico-misc, mico-vendor, libjson-c, libubus, libblobmsg-json, libubox
+Source: /home/jenkins/mico/mi/mico-voip
+Section: xiaomi
+Architecture: meson
+Installed-Size: 426374
+Description:  mico voip service

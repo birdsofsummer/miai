@@ -1,0 +1,8 @@
+Package: libgssdp
+Version: 1.0.2-1
+Depends: libc, librt, libpthread, libsoup, glib2
+Source: /home/jenkins/mico/mi/gssdp
+Section: libs
+Architecture: meson
+Installed-Size: 20780
+Description:  A GObject-based API for doing SSDP (Simple Service Discovery Protocol) transparently.

@@ -1,0 +1,10 @@
+/usr/share/dlna/QPlay1.xml
+/usr/share/dlna/ConnectionManager1.xml
+/usr/share/dlna/Playlist1.xml
+/usr/share/dlna/Favorites1.xml
+/usr/share/dlna/AVTransport1.xml
+/usr/share/dlna/Queue1.xml
+/usr/share/dlna/device.xml
+/etc/init.d/dlnainit
+/usr/bin/dlna
+/usr/share/dlna/RenderingControl1.xml

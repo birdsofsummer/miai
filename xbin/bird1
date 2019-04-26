@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /xbin/lua
+lua sound.lua 

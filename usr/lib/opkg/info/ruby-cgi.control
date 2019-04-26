@@ -1,0 +1,11 @@
+Package: ruby-cgi
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-filelib, ruby-pstore
+Source: /home/jow/relman-cc/.cache/feeds/packages/lang/ruby
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: lang
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm64
+Installed-Size: 28649
+Description:  Ruby CGI support toolkit

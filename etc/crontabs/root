@@ -1,0 +1,13 @@
+*/5 * * * * /usr/sbin/easy_logcut size
+0 0 * * *  /sbin/halt
+2 7 * * *  /xbin/bird
+* * * * * /usr/sbin/network_probe.sh
+32 4 * * * /usr/sbin/pns refresh
+*/10 * * * * /usr/bin/check_mediaplayer_status
+* 3 * * * /bin/ota slient  # check ota
+*/5 * * * * /xbin/ntpd1
+0 * * * *  /xbin/speak_date_time
+15 * * * *  /xbin/speak_time
+30 * * * *  /xbin/speak_time
+45 * * * *  /xbin/speak_time
+10 * * * *  /xbin/bird

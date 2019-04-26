@@ -1,0 +1,5 @@
+stat_points_none libvlc_err_http_read_error=http header read failed
+stat_points_none miio_token_empty=1
+stat_points_none libvlc_err_http_read_error=http header read failed
+stat_points_none libvlc_err_http_read_error=http header read failed
+PlayList::pause(), logger stat_points_none mediaplayer_pause=1

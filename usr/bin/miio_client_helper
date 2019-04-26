@@ -1,0 +1,378 @@
+#!/bin/sh
+. /usr/share/libubox/jshn.sh
+
+MICO_SYSLOG_BINDDEVICE="[MICOREGISTER]"
+MIIO_RECV_LINE="/usr/bin/miio_recv_line"
+MIIO_SEND_LINE="/usr/bin/miio_send_line"
+WIFI_MAX_RETRY=5
+WIFI_RETRY_INTERVAL=3
+WIFI_SSID=
+SN=$(/bin/getmac.sh sn)
+UID=
+after_wifi_start=
+
+DINFO_MODEL="xiaomi.wifispeaker.s12"
+ROM_TYPE=$(uci -c /usr/share/mico get version.version.HARDWARE)
+ROM_TYPE=$(echo $ROM_TYPE|tr '[A-Z]' '[a-z]')
+case $ROM_TYPE in
+    s12|s12a)
+        DINFO_MODEL="xiaomi.wifispeaker.s12"
+    ;;
+    *)
+        DINFO_MODEL="xiaomi.wifispeaker.$ROM_TYPE"
+    ;;
+esac
+
+LOG_TITLE=miio_client_helper
+mico_log() {
+    logger -t $LOG_TITLE[$$] -p 3 "$*"
+}
+
+# contains(string, substring)
+#
+# Returns 0 if the specified string contains the specified substring,
+# otherwise returns 1.
+contains()
+{
+    local string="$1"
+    local substring="$2"
+
+     # $substring is in $string
+    [ test "${string#*$substring}" != "$string" ] &&　return 0    
+
+    # $substring is not in $string
+    return 1    
+}
+
+helper_ready_send()
+{
+    local RSP_BUF="{\"method\":\"_internal.helper_ready\"}"
+
+    mico_log "RESPONSE:" $RSP_BUF
+    $MIIO_SEND_LINE "$RSP_BUF"
+}
+
+process_didkeymac2()
+{
+    local RSP_BUF=""
+    echo "Got _internal.req_didkeymac2"
+
+    RESPONSE=`${PLUGIN_MISPEAKER}`
+    if [ x$RESPONSE = x ]; then
+         RESPONSE=\"NULL\"
+    fi
+
+    RSP_BUF="{\"method\":\"_internal.res_didkeymac2\",\"params\":$RESPONSE,\"mac\":\"$MAC\"}"
+    mico_log "RESPONSE:" $RSP_BUF
+    $MIIO_SEND_LINE "$RSP_BUF"
+}
+
+process_wifi_status()
+{
+    local RSP_BUF=""
+#          if [ ! -f /data/wifi/supplicant ]; then
+    echo "Got _internal.req_wifi_conf_status"
+    if [ -f /tmp/ap_config_mode_flag ]; then
+        mico_log "miio enter ap config mode"
+        RSP_BUF="{\"method\":\"_internal.res_wifi_conf_status\",\"params\":0}"
+    else
+        mico_log "miio enter sta mode"
+        RSP_BUF="{\"method\":\"_internal.res_wifi_conf_status\",\"params\":1}"
+    fi
+
+    mico_log "RESPONSE:" $RSP_BUF
+    $MIIO_SEND_LINE "$RSP_BUF"
+}
+
+process_dinfo()
+{
+    local RSP_BUF=""
+    local dinfo_did=`/bin/getmac.sh did | sed -n 1p`
+    local dinfo_key=`/bin/getmac.sh did | sed -n 2p`
+    local dinfo_vendor="xiaomi"
+    local dinfo_mac=`/bin/getmac.sh mac`
+    local dinfo_model=$DINFO_MODEL
+    RSP_BUF="{\"method\":\"_internal.response_dinfo\",\"params\":{"
+    RSP_BUF="$RSP_BUF\"did\":0"
+    RSP_BUF="$RSP_BUF,\"key\":\"\""
+    RSP_BUF="$RSP_BUF,\"vendor\":\"\""
+    RSP_BUF="$RSP_BUF,\"mac\":\"\""
+    RSP_BUF="$RSP_BUF,\"model\":\"\""
+    RSP_BUF="$RSP_BUF}}"
+
+    echo "Got _internal.request_dinfo"
+    [ "x"$dinfo_did == "x" ] && {
+        mico_log "miio_did empty!!!!!!!, check getmac.sh and /data/etc/binfo "
+        mico_log "RESPONSE:" $RSP_BUF
+        $MIIO_SEND_LINE "$RSP_BUF"
+        return;
+    }
+
+    [ "x"$dinfo_key == "x" ] && {
+        mico_log "miio_key empty!!!!!!!, check getmac.sh and /data/etc/binfo "
+        mico_log "RESPONSE:" $RSP_BUF
+        $MIIO_SEND_LINE "$RSP_BUF"
+        return;
+    }
+
+    [ "x"$dinfo_mac == "x" ] && {
+        mico_log "mac empty!!!!!!!, check getmac.sh and /data/etc/binfo "
+        mico_log "RESPONSE:" $RSP_BUF
+        $MIIO_SEND_LINE "$RSP_BUF"
+        return;
+    }
+
+    RSP_BUF="{\"method\":\"_internal.response_dinfo\",\"params\":{"
+    RSP_BUF="$RSP_BUF\"did\":$dinfo_did"
+    RSP_BUF="$RSP_BUF,\"key\":\"$dinfo_key\""
+    RSP_BUF="$RSP_BUF,\"vendor\":\"$dinfo_vendor\""
+    RSP_BUF="$RSP_BUF,\"mac\":\"$dinfo_mac\""
+    RSP_BUF="$RSP_BUF,\"model\":\"$dinfo_model\""
+    RSP_BUF="$RSP_BUF}}"
+
+    mico_log "RESPONSE:" $RSP_BUF
+    $MIIO_SEND_LINE "$RSP_BUF"
+
+}
+
+process_dtoken()
+{
+    local RSP_BUF=""
+
+    echo "Got _internal.request_dtoken"
+
+    json_select params
+    json_get_var dtoken_token ntoken
+    
+    mico_log "dtoken from server: $dtoken_token"
+    dtoken_file="/data/miio/dtoken"
+    if [ ! -f "$dtoken_file" ];
+    then
+        mkdir -p /data/miio
+        echo "$dtoken_token" > "$dtoken_file"
+        sync "$dtoken_file"
+    else
+        dtoken_token=`cat $dtoken_file`
+    fi
+
+    RSP_BUF="{\"method\":\"_internal.response_dtoken\",\"params\":\"${dtoken_token}\"}"
+
+    mico_log "RESPONSE:" $RSP_BUF
+    $MIIO_SEND_LINE "$RSP_BUF"
+
+    local country_domain=$(uci -c /data/etc get binfo.binfo.country)
+    [ "$country_domain" != "CN" ] && {
+        RSP_BUF="{\"method\":\"_internal.response_dcountry\",\"params\":\"$country_domain\"}"
+        $MIIO_SEND_LINE "$RSP_BUF"
+    }
+}
+
+process_info()
+{   
+    local RSP_BUF=
+    local ifname=
+    local ssid=
+    local bssid=
+    local ip=
+    local wpa_status=
+    local vendor=
+    local gw=
+    local netmask=
+    local rom_version=
+    local UID=
+
+    wpa_status=`wpa_cli status`
+
+    ifname=$(echo $wpa_status|awk -F \' '{print $2}')
+    echo "ifname1: $ifname"
+
+    ssid=`cat /data/wifi/wpa_supplicant.conf | grep ' ssid=' | cut -d '"' -f 2`
+    ssid=$(echo $ssid | sed -e 's/^"/\\"/' | sed -e 's/\([^\]\)"/\1\\"/g' | sed -e 's/\([^\]\)"/\1\\"/g' | sed -e 's/\([^\]\)\(\\[^"\\\/bfnrtu]\)/\1\\\2/g' | sed -e 's/\([^\]\)\\$/\1\\\\/')
+    echo "ssid: $ssid"
+
+    bssid=${wpa_status##*bssid=}
+    bssid=`echo ${bssid} | cut -d ' ' -f 1 | tr '[:lower:]' '[:upper:]'`
+    echo "bssid: $bssid"
+#    bssid=`matool_get_mac`
+#    ssid="Xiaomi_Family_5G"
+
+    ip=${wpa_status##*ip_address=}
+    ip=`echo ${ip} | cut -d ' ' -f 1`
+    echo "ip: $ip"
+
+    wpa_status=`ifconfig ${ifname}`
+
+    netmask=${wpa_status##*Mask:}
+    netmask=`echo ${netmask} | cut -d ' ' -f 1`
+    echo "netmask: $netmask"
+
+    gw=`route -n|grep 'UG'|tr -s ' ' | cut -f 2 -d ' '`
+    echo "gw: $gw"
+
+    # get vendor and then version
+    vendor="xiaomi"
+    rom_version=`uci -q -c /usr/share/mico/ get version.version.ROM`
+    if [ -z $rom_version ]; then
+    rom_version="unknown"
+    fi
+    
+    #-1:device unregister
+    local partner_token_ext=""
+    UID=`matool_get_super_admin`
+    if [ "${after_wifi_start}" = "1" ] && [ "$UID" = "-1" -o "$UID" = "" ]; then
+        #after init
+        mico_log "no mico uid, miio try get new mico token&did"
+        partner_token=`matool --method identifyDevice`
+        [ x$partner_token = x ] & {
+            mico_log "miio get token faild need retry"
+        }
+        partner_token_ext="\"partner_token\":\"${partner_token}\","
+    fi
+
+    mico_log "miio get mico did"
+    partner_id=`matool_get_device_id`
+RSP_BUF="{\"method\":\"_internal.info\",\"params\":{\
+\"hw_ver\":\"Linux\",\"fw_ver\":\"$rom_version\",\
+\"partner_id\":\"${partner_id}\","${partner_token_ext}"
+\"ap\":{\
+\"ssid\":\"$ssid\",\"bssid\":\"$bssid\"\
+},\
+\"netif\":{\
+ \"localIp\":\"$ip\",\"mask\":\"$netmask\",\"gw\":\"$gw\"\
+}}}"
+
+    after_wifi_start=1
+    if [ -f /tmp/ap_config_mode_flag ]; then
+        /etc/init.d/wireless post_miio
+    fi
+
+    mico_log "RESPONSE:" $RSP_BUF
+    $MIIO_SEND_LINE "$RSP_BUF"
+}
+
+
+process_wifistart()
+{
+    local ssid=
+    local uid=
+    local passwd=
+
+    msg='{"method":"_internal.process_wifistart"}'
+    $MIIO_SEND_LINE $msg
+
+    #{"method":"_internal.wifi_start","params":{"datadir":"/etc/miio/","ssid":"00V4","passwd":"z12345678","uid":"96882699","country_domain":"","tz":"Asia/Shanghai"}}
+    json_select params
+    json_get_var ssid ssid
+    json_get_var uid uid
+    json_get_var passwd passwd
+    json_get_var country_domain country_domain
+    mico_log "ssid:$ssid passwd:$passwd uid:$uid country:$country_domain"
+    #mico app init / miio_service 
+    [ "$ssid" = "dummy" -a "$passwd" = "dummy" ] && {
+        mico_log "started by miio_service don't change wifi config"
+        msg='{"method":"_internal.wifi_connected"}'
+        $MIIO_SEND_LINE $msg
+        return
+    }
+ 
+    sleep 2
+
+    if [ ! -f /tmp/ap_config_mode_flag ]; then
+        mico_log "ignore message from miio notify\n"
+        return;        
+    fi
+
+    [ "$uid" == "0" -o "$uid" == "" ] && {
+        mico_log "ignore message from miio notify\n"
+        return;
+    }
+
+    #urgly fix for miio app sent sg instead of tw for tw region
+    [ "$country_domain" == "sg" ] && {
+        country_domain=TW
+    }
+
+    /etc/init.d/wireless miio_register "$country_domain" "$ssid" "$passwd"
+    [ "$?" != "0" ] && {
+        mico_log "connect faild!"
+        msg='{"method":"local.status","params":"wifi_ap_mode_2"}'
+        $MIIO_SEND_LINE $msg
+        return;
+    }
+
+    msg='{"method":"_internal.wifi_connected"}'
+    $MIIO_SEND_LINE $msg
+    after_wifi_start=1
+    return;
+}
+
+main() {
+    local RECV_BUF=""
+    local which_method=""
+
+    while true; do
+        RECV_BUF=`$MIIO_RECV_LINE`
+        if [ $? -ne 0 ]; then
+        sleep 1;
+        continue
+    fi
+
+    echo "##################################################"
+    mico_log "received command "${RECV_BUF}
+
+    json_init
+    json_load "$RECV_BUF"
+    json_get_var which_method method
+        
+    [ "x$which_method" == "x" ] && {
+        #fix a stupid miio_client bug which some commends lack of  "}" at the end of json string.
+        RECV_BUF=$RECV_BUF"}"
+        #clean up last parse    
+        json_cleanup
+       
+        json_init
+        json_load "$RECV_BUF"
+        json_get_var which_method method
+    }
+ 
+    mico_log "method from miio_client: $which_method"
+
+    case $which_method in
+    "_internal.info")
+        process_info
+        ;;
+    "_internal.req_didkeymac2")
+        process_didkeymac2
+        ;;
+    "_internal.req_wifi_conf_status")
+        process_wifi_status
+        ;;
+    "_internal.wifi_start")
+        process_wifistart
+        ;;
+    "_internal.request_dinfo")
+        process_dinfo
+        ;;
+    "_internal.request_dtoken")
+        process_dtoken
+        ;;
+    *)
+        sleep 1
+    esac
+
+    json_cleanup
+
+    done
+}
+
+#force shut led 10 
+#if helper receive _internal.wifi_start, 
+#it would cause wireless restart-> dhcpc->simple_dhcp.sh->miio restart.
+#so force shut led 10
+export LED_PARENT=miio_client_helper
+/bin/shut_led 10
+
+helper_ready_send
+
+main
+

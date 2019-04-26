@@ -1,0 +1,19 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org
+
+START=98
+start() {
+  /usr/sbin/ntpd
+  busybox hwclock -w
+}
+
+stop() {
+   pkill -9 ntpd
+}
+
+restart() {
+    stop
+    start
+}
+
+

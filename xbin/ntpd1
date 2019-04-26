@@ -1,0 +1,6 @@
+#!/bin/sh
+echo `date`
+/usr/sbin/ntpd -q
+#/etc/init.d/ntpd start
+echo `date`
+#/usr/bin/pkill -9 ntpd  &

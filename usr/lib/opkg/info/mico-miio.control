@@ -1,0 +1,8 @@
+Package: mico-miio
+Version: 0.0.1
+Depends: libc, librt, libpthread, libjson-c, libubus, libblobmsg-json, libubox, libuci, libpolarssl
+Source: /home/jenkins/mico/mi/mico-miio
+Section: xiaomi
+Architecture: meson
+Installed-Size: 65164
+Description:  MIIO OT client binary files

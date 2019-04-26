@@ -1,0 +1,2 @@
+config messaging 'deviceInfo'
+config messaging 'didiInfo'

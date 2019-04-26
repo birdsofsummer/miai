@@ -1,0 +1,30 @@
+c=""
+let MAX=10000
+let wait_time=MAX/10
+while read line
+do
+    c="$c $line"
+done
+
+sp(){
+  d=$*
+  let lll=${#d}
+  let n=lll/MAX
+  for i in `seq 0 $n`
+  do
+        let s=i*MAX
+	let tt=s+MAX
+	echo "["$i "/" $n  "]:" $s "to" $tt
+	c1=${d:s:tt}
+	speak $c1
+	sleep $wait_time
+	#$MAX
+	#wait
+  done
+}
+
+if [ ${#c} -le $MAX ] ;then
+   speak $c 
+else
+   sp $c &
+fi

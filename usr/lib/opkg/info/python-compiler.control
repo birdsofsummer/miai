@@ -1,0 +1,11 @@
+Package: python-compiler
+Version: 2.7.9-5
+Depends: libc, librt, libpthread, python-light
+Source: feeds/packages/lang/python
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Section: lang
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Architecture: arm64
+Installed-Size: 37648
+Description:  Python 2.7 compiler module

@@ -1,0 +1,6 @@
+iptables -L
+iptables -F
+iptables -L |cut -d " " -f2|uniq|sed '/^$/d'|awk '{print "iptables -A " $0 " -j ACCEPT" }'|sh
+iptables -L
+
+

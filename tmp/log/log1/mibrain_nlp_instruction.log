@@ -1,0 +1,12 @@
+{
+  "header": {
+    "namespace": "SpeechSynthesizer",
+    "name": "Speak",
+    "id": "f11779ed986c4a34850a57ef13100311",
+    "dialog_id": "1f8ebd3c41241f79079f12bfa199a833"
+  },
+  "payload": {
+    "text": "有很多的.百度蜘蛛不止一个ip",
+    "sample_rate": 16000
+  }
+}

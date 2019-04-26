@@ -1,0 +1,8 @@
+Package: hostapd-common
+Version: 2017-08-24-3
+Depends: libc, librt, libpthread
+Source: /home/jenkins/mico/mi/hostapd
+Section: net
+Architecture: meson
+Installed-Size: 5654
+Description:  hostapd/wpa_supplicant common support files

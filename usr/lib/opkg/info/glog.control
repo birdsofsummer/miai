@@ -1,0 +1,8 @@
+Package: glog
+Version: 0.3.5-1
+Depends: libc, librt, libpthread, librt, libstdcpp
+Source: /home/jenkins/mico/mi/glog
+Section: opt
+Architecture: meson
+Installed-Size: 39095
+Description:  glog

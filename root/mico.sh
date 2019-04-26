@@ -1,0 +1,1 @@
+/xbin/mico.sh

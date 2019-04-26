@@ -1,0 +1,4 @@
+/etc/init.d/silentboot
+/bin/boardupgrade.sh
+/bin/silentboot.sh
+/bin/flash.sh

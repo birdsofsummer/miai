@@ -1,0 +1,20 @@
+Package: ruby-multithread
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, ruby, ruby-misc
+Source: /home/jow/relman-cc/.cache/feeds/packages/lang/ruby
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: lang
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm64
+Installed-Size: 15216
+Description:  Provides files for multithread usage:
+ - io/nonblock.so
+ - io/wait.so
+ - thread.so (FYI, Thread is a core class)
+ - monitor.rb
+ - mutex_m.rb
+ - sync.rb
+ - thwait.rb
+ - timeout.rb
+ 

@@ -1,0 +1,8 @@
+Package: notify
+Version: 0.0.1
+Depends: libc, librt, libpthread, libjson-c, libubus, libblobmsg-json, libubox, libuci, libuuid, libpthread
+Source: /home/jenkins/mico/mi/notify
+Section: xiaomi
+Architecture: meson
+Installed-Size: 9624
+Description:  notification

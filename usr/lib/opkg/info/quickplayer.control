@@ -1,0 +1,8 @@
+Package: quickplayer
+Version: 0.0.1
+Depends: libc, librt, libpthread, libubox, libubus, alsa-lib, libsndfile
+Source: /home/jenkins/mico/mi/quickplayer
+Section: xiaomi
+Architecture: meson
+Installed-Size: 6458
+Description:  quick player service

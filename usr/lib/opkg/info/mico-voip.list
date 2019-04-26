@@ -1,0 +1,9 @@
+/usr/bin/mico_voip_ubus_helper
+/etc/init.d/mico_voip_ubus_helper
+/usr/share/sound/voip_on.wav
+/usr/bin/mico_voip_service
+/usr/share/sound/voip_off.wav
+/usr/share/sound/voip_ringback.mp3
+/etc/init.d/mico_voip_service
+/usr/share/sound/voip_ringing.mp3
+/usr/bin/mico_voip_service_helper

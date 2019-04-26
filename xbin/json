@@ -1,0 +1,21 @@
+#!/bin/sh
+parse()
+{
+    source /usr/share/libubox/jshn.sh
+    play_status=$*
+    [ x"$play_status" == x"" ] && exit 1
+    json_init 
+    json_load "$play_status"
+    json_get_var info_string info
+    json_cleanup
+    [ x"$info_string" == x"" ] && exit 1
+    json_init
+    json_load "$info_string"
+    echo "$info_string"
+ #   json_get_var status_string status
+    json_cleanup
+ #   echo $status_string
+}
+
+parse $*
+

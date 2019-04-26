@@ -1,0 +1,11 @@
+Package: libruby
+Version: 2.2.4-1
+Depends: libc, librt, libpthread, libpthread, librt, libgmp
+Source: /home/jow/relman-cc/.cache/feeds/packages/lang/ruby
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: arm64
+Installed-Size: 741711
+Description:  Ruby scripting language (shared library)

@@ -1,0 +1,1 @@
+{"meta":{"type":"ERROR","cmd":"AI_CMD_TTS","request_id":"b0356c07b3d2ec5dfcfedb8cacefb587","timestamp":1554866558840},"response":{"error_code":101,"error_msg":"empty tts request text."}}

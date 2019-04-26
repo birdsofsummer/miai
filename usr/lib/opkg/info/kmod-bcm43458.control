@@ -1,0 +1,9 @@
+Package: kmod-bcm43458
+Version: 3.14.29-1
+Depends: kernel (=3.14.29-1-36560070b2f0ab52748c2eca5062600b)
+Source: package/wifi/bcm43458
+Section: kernel
+Status: unknown hold not-installed
+Architecture: meson
+Installed-Size: 1414006
+Description:  Broadcom 43458 wifi AP driver

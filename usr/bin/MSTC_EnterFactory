@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/bin/fw_setenv boot_part boot1
+
+echo ""
+echo "MSTC_R_Succ"
+reboot

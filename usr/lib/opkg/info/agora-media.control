@@ -1,0 +1,8 @@
+Package: agora-media
+Version: 0.0.1
+Depends: libc, librt, libpthread, libstdcpp, alsa-lib
+Source: /home/jenkins/mico/mi/agora-media
+Section: xiaomi
+Architecture: meson
+Installed-Size: 2276353
+Description:  agora media

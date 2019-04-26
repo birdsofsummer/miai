@@ -1,0 +1,9 @@
+Package: alsa-utils
+Version: 1.0.28-2
+Depends: libc, librt, libpthread, alsa-lib, libncurses, libpthread
+Source: package/utils/alsa-utils
+Section: utils
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: meson
+Installed-Size: 128099
+Description:  ALSA (Advanced Linux Sound Architecture) utilities

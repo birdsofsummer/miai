@@ -1,0 +1,11 @@
+/usr/lib/ruby/2.2/uri.rb
+/usr/lib/ruby/2.2/uri/ldap.rb
+/usr/lib/ruby/2.2/uri/generic.rb
+/usr/lib/ruby/2.2/uri/http.rb
+/usr/lib/ruby/2.2/uri/rfc2396_parser.rb
+/usr/lib/ruby/2.2/uri/rfc3986_parser.rb
+/usr/lib/ruby/2.2/uri/ldaps.rb
+/usr/lib/ruby/2.2/uri/common.rb
+/usr/lib/ruby/2.2/uri/https.rb
+/usr/lib/ruby/2.2/uri/ftp.rb
+/usr/lib/ruby/2.2/uri/mailto.rb

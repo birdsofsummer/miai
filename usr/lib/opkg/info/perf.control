@@ -1,0 +1,8 @@
+Package: perf
+Version: 3.14.29-2
+Depends: libc, librt, libpthread, libelf1, libdw, libpthread, librt, binutils
+Source: package/devel/perf
+Section: devel
+Architecture: meson
+Installed-Size: 393835
+Description:  perf is the Linux performance monitoring tool

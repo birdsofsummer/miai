@@ -1,0 +1,179 @@
+#!/bin/sh
+
+OTA_ALL="mico_all.bin"
+OTA_ROOT="mico_firmware.bin"
+OTA_PATH="/tmp"
+OTA_FILE="/tmp/mico_ota.bin"
+OTA_MD5_FILE="$OTA_FILE.md5"
+ROOT_URL="http://api.miwifi.com/rs/grayupgrade"
+
+SILENT=0
+
+export LED_PARENT=ota
+
+mkdir -p "/tmp/status"
+
+try_release_mem() {
+    local logsize
+
+    /etc/init.d/pns stop
+    /etc/init.d/mediaplayer stop
+    /etc/init.d/miio stop
+
+    [ -f /tmp/log/message.old ] && {
+        echo "" > /tmp/log/message.old
+    }
+
+    #try not to mess up log
+    [ -f /tmp/log/messages ] && {
+        logsize=`du -k /tmp/log/messages`
+        [ "$logsize" -gt "1000" ] && easy_logcut
+    }
+}
+
+clean_oldconfig() {
+    [ -f "/data/pns/wuw_chn.fcf" ] && rm /data/pns/wuw_chn.fcf
+}
+
+verify_upgrade() {
+    # package integrity verification is done by miso
+    return 0
+}
+
+check() {
+    set_upgrade_status "check"
+    matool_check_upgrade
+}
+
+donot_need_upgrade() {
+    set_upgrade_status "no_need"
+}
+
+upgrade_failed() {
+    [ -f $OTA_FILE ] && rm -f $OTA_FILE
+    set_upgrade_status "ota_failed"
+    /bin/show_led 0
+}
+
+
+download_upgrade() {
+    set_upgrade_status "download"
+    wget -t3 -T30 "$1" -O $OTA_FILE
+}
+
+# make sure we have room for ota file
+predownload_cleanup() {
+    local size="$1"
+    local freemem
+    local needmem
+
+    echo 3 > /proc/sys/vm/drop_caches
+    freemem=`cat /proc/meminfo | grep MemFree | awk '{print $2}'`
+    # $size is in bytes. assume needed_memory=filesize+2MB
+    needmem=$(($size/1024 + 2048))
+    if [ "$freemem" -lt "$needmem" ]; then
+        try_release_mem
+    fi
+
+    #try again.
+    sync
+    echo 3 > /proc/sys/vm/drop_caches
+    freemem=`cat /proc/meminfo | grep MemFree | awk '{print $2}'`
+
+    if [ "$freemem" -lt "$needmem" ]; then
+        # log the problem and leave our fate to wget
+        logger -t ota -p 3 "not enough space.free=$freemem need=$needmem "
+        cat /proc/meminfo >> /var/log/messages
+    fi
+    return 0
+}
+
+
+upgrade() {
+    if [ -z "$1" -o -z "$2" ]; then
+        upgrade_failed
+        return 1
+    fi
+
+    # start upgrade LED
+    /bin/show_led 2
+
+    predownload_cleanup "$2"
+
+    download_upgrade "$1"
+    if [ "$?" != "0" ] ; then
+	upgrade_failed
+        return 1
+    fi
+
+    clean_oldconfig
+    set_upgrade_status "burn"
+
+    flash.sh $OTA_FILE "$SILENT" > /dev/null
+    if [ "$?" != "0" ] ; then
+	upgrade_failed
+        return 1
+    fi
+
+    return 0
+}
+
+# $1 = file url
+# $2 = file md5
+# $3 = file size
+check_and_upgrade() {
+    if [ -z "$1" ]; then
+        set_upgrade_status "check"
+        result=$(matool_check_upgrade)
+        if [ $? -eq 0 ] ; then
+            url=$(echo "$result" | awk '{print $1}')
+            size=$(echo "$result" | awk '{print $2}')
+            upgrade "$url" "$size"
+        else
+            donot_need_upgrade
+        fi
+        return $?
+    else
+	# if size is not provided ("$3") , then assume the size is 30MB
+        if [ -z "$3" ]; then
+            size=31457280
+        else
+            size="$3"
+        fi
+        upgrade $1 "$size"
+    fi
+
+}
+
+slient_check_and_upgrade() {
+    logger -t ota_slient -p 3 "Checking OTA ..."
+    sn=$(getmac.sh sn | tr -d '\n' | tail -c1)
+    day=$(date +%d | tail -c2)
+    MAXWAIT=3600
+    if [ "$sn" = "$day" ]; then
+	logger -t ota_slient -p 3 "Wait random start..."
+	sleep $((RANDOM % MAXWAIT))
+	logger -t ota_slient -p 3 "Wait random done..."
+	SILENT=1
+	check_and_upgrade
+    fi
+}
+
+case "$1" in
+    success)
+    set_upgrade_status success
+    ;;
+    check)
+    check
+    ;;
+    ble)
+    check_and_upgrade $2 $3 $4
+    ;;
+    upgrade)
+    check_and_upgrade $2 $3 $4
+    ;;
+    slient)
+	slient_check_and_upgrade
+    ;;
+    *)
+esac

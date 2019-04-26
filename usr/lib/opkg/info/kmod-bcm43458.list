@@ -1,0 +1,12 @@
+/etc/wifi/fw_bcmdhd_apsta.bin
+/etc/wifi/fw_bcmdhd.bin
+/lib/modules/3.14.29/dhd.ko
+/etc/wifi/wpa_supplicant.conf
+/etc/dhcp/dhcpd.conf
+/etc/wifi/config.txt
+/etc/modules.d/90-bcm43458
+/etc/bt/bcmdhd_37M.hcd
+/etc/hostapd/hostapd.conf
+/etc/bt/bt_config.xml
+/etc/wifi/nvram.txt
+/etc/wifi/fw_bcmdhd_mfg.bin
